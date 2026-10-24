@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: stockpulse_app
+    description: Operational data written by the StockPulse Django application.
+    schema: public
+    tables:
+      - name: ingestion_salerecord
+        description: Validated sales lines.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          - name: transaction_id
+            data_tests:
+              - not_null
+          - name: sku
+            data_tests:
+              - not_null
+          - name: quantity
+            data_tests:
+              - not_null
+
+      - name: ingestion_product
+        description: Product dimension maintained by the ingestion service.
+        columns:
+          - name: id
+            data_tests:
+              - unique
+              - not_null
+          - name: sku
+            data_tests:
+              - unique
+              - not_null

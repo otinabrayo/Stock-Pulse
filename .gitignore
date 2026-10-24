@@ -1,4 +1,5 @@
 .venv/
+.venv-dbt/
 __pycache__/
 *.py[cod]
 .env

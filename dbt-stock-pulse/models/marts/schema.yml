@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: fct_daily_sales
+    description: Daily sales and profitability aggregates.
+    columns:
+      - name: sale_date
+        data_tests:
+          - unique
+          - not_null
+
+      - name: sales_lines
+        data_tests:
+          - not_null
+
+      - name: revenue
+        data_tests:
+          - not_null
+
+      - name: gross_profit
+        data_tests:
+          - not_null
+
+  - name: mart_product_performance
+    description: Sales and profitability aggregates by product.
+    columns:
+      - name: sku
+        data_tests:
+          - not_null
+
+      - name: units_sold
+        data_tests:
+          - not_null
+
+      - name: revenue
+        data_tests:
+          - not_null
+
+      - name: gross_profit
+        data_tests:
+          - not_null
