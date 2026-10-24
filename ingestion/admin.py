@@ -1,7 +1,5 @@
 from django.contrib import admin
-
-# Register your models here.
-from .models import IngestionRun
+from .models import IngestionRun, Product, SaleRecord, RejectedRecord
 
 
 @admin.register(IngestionRun)
@@ -21,3 +19,10 @@ class IngestionRunAdmin(admin.ModelAdmin):
         "created_at",
         "completed_at",
     )
+
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ("sku", "name", "category", "active")
+    list_filter = ("category", "active")
+    search_fields = ("sku", "name")

@@ -38,6 +38,24 @@ class IngestionRun(models.Model):
         return f"{self.original_filename} ({self.status})"
 
 
+class Product(models.Model):
+    sku = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=200)
+    category = models.CharField(
+        max_length=100,
+        default="Uncategorised",
+    )
+    active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["sku"]
+
+    def __str__(self):
+        return f"{self.sku} - {self.name}"
+
+
 class SaleRecord(models.Model):
     """
     A validated sales line in the analytical data layer.
@@ -69,6 +87,14 @@ class SaleRecord(models.Model):
     )
 
     created_at = models.DateTimeField(auto_now_add=True)
+
+    product = models.ForeignKey(
+        Product,
+        on_delete=models.PROTECT,
+        related_name="sales",
+        null=True,
+        blank=True,
+    )
 
     class Meta:
         constraints = [

@@ -1,6 +1,11 @@
 from django.db import transaction
 from django.utils import timezone
-from .models import IngestionRun, RejectedRecord, SaleRecord
+from .models import (
+    IngestionRun,
+    RejectedRecord,
+    SaleRecord,
+    Product,
+)
 
 
 def load_validation_result(run, result):
@@ -38,6 +43,38 @@ def load_validation_result(run, result):
             ).values_list("transaction_id", "sku")
         )
 
+        # Create dimension records for previously unseen SKUs.
+        incoming_skus = {
+            row["sku"]
+            for row in result.valid_rows
+        }
+
+        existing_skus = set(
+            Product.objects.filter(
+                sku__in=incoming_skus
+            ).values_list("sku", flat=True)
+        )
+
+        Product.objects.bulk_create(
+            [
+                Product(
+                    sku=sku,
+                    name=sku,
+                    category="Uncategorised",
+                )
+                for sku in incoming_skus - existing_skus
+            ],
+            ignore_conflicts=True,
+            batch_size=1000,
+        )
+
+        products_by_sku = {
+            product.sku: product
+            for product in Product.objects.filter(
+                sku__in=incoming_skus
+            )
+        }
+
         new_sales = []
 
         for row in result.valid_rows:
@@ -55,6 +92,7 @@ def load_validation_result(run, result):
                     unit_price=row["unit_price"],
                     unit_cost=row["unit_cost"],
                     source_run=run,
+                    product=products_by_sku[row["sku"]],
                 )
             )
 
