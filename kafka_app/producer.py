@@ -30,6 +30,15 @@ sales_events = [
         "unit_price": 40.00,
         "unit_cost": 28.00,
     },
+    {
+        "event_id": str(uuid4()),
+        "transaction_id": "TXN-KAFKA-003",
+        "sold_at": datetime.now(timezone.utc).isoformat(),
+        "sku": "SKU-003",
+        "quantity": -3,
+        "unit_price": 40.00,
+        "unit_cost": 28.00,
+    },
 ]
 
 try:

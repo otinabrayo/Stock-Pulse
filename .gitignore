@@ -12,3 +12,4 @@ staticfiles/
 .coverage
 htmlcov/
 docs/
+kafka_app/.env
