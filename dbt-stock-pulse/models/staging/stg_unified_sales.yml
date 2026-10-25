@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_unified_sales
+    description: >
+      Unified sales staging model combining Django CSV ingestion
+      and Kafka streaming events, deduplicated by transaction and SKU.
+
+    columns:
+      - name: transaction_id
+        description: Business transaction identifier.
+        data_tests:
+          - not_null
+
+      - name: sku
+        description: Product SKU.
+        data_tests:
+          - not_null
+
+      - name: source_system
+        description: Original ingestion path.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['django_csv', 'kafka']
+
+      - name: quantity
+        data_tests:
+          - not_null
+
+      - name: sold_at
+        data_tests:
+          - not_null

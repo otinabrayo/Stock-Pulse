@@ -1,6 +1,6 @@
 with sales as (
     select *
-    from {{ ref('stg_sales') }}
+    from {{ ref('stg_unified_sales') }}
 
 ),
 

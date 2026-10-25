@@ -1,6 +1,6 @@
 with sales as (
     select *
-    from "stockpulse"."analytics_staging"."stg_sales"
+    from "stockpulse"."analytics_staging"."stg_unified_sales"
 ),
 
 products as (

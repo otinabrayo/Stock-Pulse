@@ -33,3 +33,5 @@ sources:
             data_tests:
               - unique
               - not_null
+              
+      - name: kafka_sales_events
