@@ -13684,3 +13684,1995 @@ having count(*) > 1
 [0m22:42:15.213873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000151E8AFFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000151E9218E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000151E9218CB0>]}
 [0m22:42:15.214960 [debug] [MainThread]: Flushing usage events
 [0m22:42:17.589264 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:29:04.349946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F59A6E06E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F597EE2E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F59CED7C50>]}
+
+
+============================== 12:29:04.365653 | 27590d14-825d-4479-947f-f6a0fcb2e879 ==============================
+[0m12:29:04.365653 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:29:04.367819 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:29:04.369410 [debug] [MainThread]: Tracking: tracking
+[0m12:29:04.568385 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:29:04.636534 [info ] [MainThread]: python version: 3.14.5
+[0m12:29:04.688002 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:29:04.727908 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:29:05.314381 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:29:05.315891 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:29:05.319674 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:29:05.326867 [info ] [MainThread]: adapter type: postgres
+[0m12:29:05.329973 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:29:05.892710 [info ] [MainThread]: Configuration:
+[0m12:29:05.893729 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:29:05.894739 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:29:05.895558 [info ] [MainThread]: Required dependencies:
+[0m12:29:05.896378 [debug] [MainThread]: Executing "git --help"
+[0m12:29:05.951080 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:29:05.953232 [debug] [MainThread]: STDERR: "b''"
+[0m12:29:05.953912 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:29:05.954750 [info ] [MainThread]: Connection:
+[0m12:29:05.955654 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:29:05.956415 [info ] [MainThread]:   port: 5432
+[0m12:29:05.957145 [info ] [MainThread]:   user: postgres
+[0m12:29:05.957882 [info ] [MainThread]:   database: stockpulse
+[0m12:29:05.958600 [info ] [MainThread]:   schema: analytics
+[0m12:29:05.959284 [info ] [MainThread]:   connect_timeout: 10
+[0m12:29:05.960484 [info ] [MainThread]:   role: None
+[0m12:29:05.962209 [info ] [MainThread]:   search_path: None
+[0m12:29:05.963849 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:29:05.967580 [info ] [MainThread]:   sslmode: None
+[0m12:29:05.970774 [info ] [MainThread]:   sslcert: None
+[0m12:29:05.971850 [info ] [MainThread]:   sslkey: None
+[0m12:29:05.973142 [info ] [MainThread]:   sslrootcert: None
+[0m12:29:05.974519 [info ] [MainThread]:   application_name: dbt
+[0m12:29:05.975840 [info ] [MainThread]:   autocommit: False
+[0m12:29:05.977332 [info ] [MainThread]:   retries: 1
+[0m12:29:05.979322 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:29:06.713706 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:29:12.225223 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:29:12.225988 [debug] [MainThread]: On debug: select 1 as id
+[0m12:29:12.226470 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:29:12.538430 [debug] [MainThread]: SQL status: SELECT 1 in 0.312 seconds
+[0m12:29:12.539723 [debug] [MainThread]: On debug: Close
+[0m12:29:12.540306 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:29:12.541175 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:29:12.543594 [debug] [MainThread]: Command `dbt debug` succeeded at 12:29:12.543291 after 8.73 seconds
+[0m12:29:12.544489 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:29:12.545049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F59D090770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F59D21B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002F59CCDF130>]}
+[0m12:29:12.545841 [debug] [MainThread]: Flushing usage events
+[0m12:29:15.616078 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:30:35.508635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002963F8706E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002963D082E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029642067C50>]}
+
+
+============================== 12:30:35.524126 | fb98c8ec-3326-4583-85e8-000c7993b136 ==============================
+[0m12:30:35.524126 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:30:35.527029 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:30:35.528565 [debug] [MainThread]: Tracking: tracking
+[0m12:30:35.639623 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:30:35.641435 [info ] [MainThread]: python version: 3.14.5
+[0m12:30:35.646142 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:30:35.647939 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:30:36.027718 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:30:36.029587 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:30:36.031916 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:30:36.037522 [info ] [MainThread]: adapter type: postgres
+[0m12:30:36.039931 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:30:37.218008 [info ] [MainThread]: Configuration:
+[0m12:30:37.223376 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:30:37.231630 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:30:37.233894 [info ] [MainThread]: Required dependencies:
+[0m12:30:37.236806 [debug] [MainThread]: Executing "git --help"
+[0m12:30:37.411519 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:30:37.415517 [debug] [MainThread]: STDERR: "b''"
+[0m12:30:37.417370 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:30:37.421385 [info ] [MainThread]: Connection:
+[0m12:30:37.423266 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:30:37.428844 [info ] [MainThread]:   port: 5433
+[0m12:30:37.435634 [info ] [MainThread]:   user: postgres
+[0m12:30:37.446903 [info ] [MainThread]:   database: stockpulse
+[0m12:30:37.456890 [info ] [MainThread]:   schema: analytics
+[0m12:30:37.518290 [info ] [MainThread]:   connect_timeout: 10
+[0m12:30:37.536374 [info ] [MainThread]:   role: None
+[0m12:30:37.544479 [info ] [MainThread]:   search_path: None
+[0m12:30:37.556918 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:30:37.564316 [info ] [MainThread]:   sslmode: None
+[0m12:30:37.566781 [info ] [MainThread]:   sslcert: None
+[0m12:30:37.570826 [info ] [MainThread]:   sslkey: None
+[0m12:30:37.587721 [info ] [MainThread]:   sslrootcert: None
+[0m12:30:37.647336 [info ] [MainThread]:   application_name: dbt
+[0m12:30:37.726415 [info ] [MainThread]:   autocommit: False
+[0m12:30:37.789377 [info ] [MainThread]:   retries: 1
+[0m12:30:37.885829 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:30:39.559599 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:30:39.785412 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:30:39.786907 [debug] [MainThread]: On debug: select 1 as id
+[0m12:30:39.788287 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:30:39.832220 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5433 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m12:30:39.860786 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m12:30:39.862386 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m12:30:39.864255 [debug] [MainThread]: On debug: No close available on handle
+[0m12:30:39.865049 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:30:39.866844 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:30:39.868257 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5433 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:30:39.871817 [debug] [MainThread]: Command `dbt debug` failed at 12:30:39.871391 after 4.95 seconds
+[0m12:30:39.873403 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:30:39.874937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029642290510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000296423DB9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029641E73130>]}
+[0m12:30:39.876207 [debug] [MainThread]: Flushing usage events
+[0m12:30:42.910676 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:33:13.488698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E7B3EC6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E78BF2E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E7DBE7C50>]}
+
+
+============================== 12:33:13.503292 | 327663af-3c9e-4e0a-af0b-cecdb588f176 ==============================
+[0m12:33:13.503292 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:33:13.505227 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:33:13.506068 [debug] [MainThread]: Tracking: tracking
+[0m12:33:13.587724 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:33:13.588937 [info ] [MainThread]: python version: 3.14.5
+[0m12:33:13.589925 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:33:13.590965 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:33:13.796266 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:33:13.797650 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:33:13.798606 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:33:13.801873 [info ] [MainThread]: adapter type: postgres
+[0m12:33:13.803543 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:33:14.363869 [info ] [MainThread]: Configuration:
+[0m12:33:14.365102 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:33:14.365952 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:33:14.366940 [info ] [MainThread]: Required dependencies:
+[0m12:33:14.368418 [debug] [MainThread]: Executing "git --help"
+[0m12:33:14.425019 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:33:14.425991 [debug] [MainThread]: STDERR: "b''"
+[0m12:33:14.426863 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:33:14.427979 [info ] [MainThread]: Connection:
+[0m12:33:14.429375 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:33:14.430961 [info ] [MainThread]:   port: 5432
+[0m12:33:14.432278 [info ] [MainThread]:   user: postgres
+[0m12:33:14.433204 [info ] [MainThread]:   database: stockpulse
+[0m12:33:14.435742 [info ] [MainThread]:   schema: analytics
+[0m12:33:14.438323 [info ] [MainThread]:   connect_timeout: 10
+[0m12:33:14.440176 [info ] [MainThread]:   role: None
+[0m12:33:14.443114 [info ] [MainThread]:   search_path: None
+[0m12:33:14.444785 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:33:14.447078 [info ] [MainThread]:   sslmode: None
+[0m12:33:14.454466 [info ] [MainThread]:   sslcert: None
+[0m12:33:14.457072 [info ] [MainThread]:   sslkey: None
+[0m12:33:14.459122 [info ] [MainThread]:   sslrootcert: None
+[0m12:33:14.461488 [info ] [MainThread]:   application_name: dbt
+[0m12:33:14.466584 [info ] [MainThread]:   autocommit: False
+[0m12:33:14.468911 [info ] [MainThread]:   retries: 1
+[0m12:33:14.471364 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:33:15.086912 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:33:15.216322 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:33:15.218967 [debug] [MainThread]: On debug: select 1 as id
+[0m12:33:15.220824 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:33:15.328277 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m12:33:15.416752 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m12:33:15.417922 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m12:33:15.418790 [debug] [MainThread]: On debug: No close available on handle
+[0m12:33:15.419918 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:33:15.421033 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:33:15.422594 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:33:15.425231 [debug] [MainThread]: Command `dbt debug` failed at 12:33:15.424965 after 2.51 seconds
+[0m12:33:15.426178 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:33:15.427439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E7DE80510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E7DFC79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026E7D9F3130>]}
+[0m12:33:15.429057 [debug] [MainThread]: Flushing usage events
+[0m12:33:18.526802 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:36:11.939379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DB90DC6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DB68F2E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DBB8D7C50>]}
+
+
+============================== 12:36:11.948096 | 7e67c9e6-9a9f-442b-937c-c35c095a1a0a ==============================
+[0m12:36:11.948096 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:36:11.949211 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:36:11.949987 [debug] [MainThread]: Tracking: tracking
+[0m12:36:12.021606 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:36:12.022941 [info ] [MainThread]: python version: 3.14.5
+[0m12:36:12.024170 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:36:12.025379 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:36:12.252935 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:36:12.255321 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:36:12.257878 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:36:12.263180 [info ] [MainThread]: adapter type: postgres
+[0m12:36:12.268102 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:36:12.709093 [info ] [MainThread]: Configuration:
+[0m12:36:12.710202 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:36:12.711065 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:36:12.712051 [info ] [MainThread]: Required dependencies:
+[0m12:36:12.713056 [debug] [MainThread]: Executing "git --help"
+[0m12:36:12.760465 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:36:12.761129 [debug] [MainThread]: STDERR: "b''"
+[0m12:36:12.761684 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:36:12.762442 [info ] [MainThread]: Connection:
+[0m12:36:12.763184 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:36:12.763888 [info ] [MainThread]:   port: 5432
+[0m12:36:12.764584 [info ] [MainThread]:   user: postgres
+[0m12:36:12.765454 [info ] [MainThread]:   database: stockpulse
+[0m12:36:12.766946 [info ] [MainThread]:   schema: analytics
+[0m12:36:12.768431 [info ] [MainThread]:   connect_timeout: 10
+[0m12:36:12.769953 [info ] [MainThread]:   role: None
+[0m12:36:12.771116 [info ] [MainThread]:   search_path: None
+[0m12:36:12.772403 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:36:12.773809 [info ] [MainThread]:   sslmode: None
+[0m12:36:12.775223 [info ] [MainThread]:   sslcert: None
+[0m12:36:12.776527 [info ] [MainThread]:   sslkey: None
+[0m12:36:12.777820 [info ] [MainThread]:   sslrootcert: None
+[0m12:36:12.779104 [info ] [MainThread]:   application_name: dbt
+[0m12:36:12.781281 [info ] [MainThread]:   autocommit: False
+[0m12:36:12.784163 [info ] [MainThread]:   retries: 1
+[0m12:36:12.786217 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:36:13.332992 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:36:13.443140 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:36:13.443806 [debug] [MainThread]: On debug: select 1 as id
+[0m12:36:13.444372 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:36:13.512656 [debug] [MainThread]: SQL status: SELECT 1 in 0.068 seconds
+[0m12:36:13.514022 [debug] [MainThread]: On debug: Close
+[0m12:36:13.514599 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:36:13.515836 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:36:13.517577 [debug] [MainThread]: Command `dbt debug` succeeded at 12:36:13.517364 after 1.97 seconds
+[0m12:36:13.518151 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:36:13.518725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DBBA9C770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DBBBE79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018DBB6DB130>]}
+[0m12:36:13.519358 [debug] [MainThread]: Flushing usage events
+[0m12:36:15.948025 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:37:50.291873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961D37C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961AB92E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961FB77C50>]}
+
+
+============================== 12:37:50.299853 | b7b9a228-8cc2-4151-8399-7254a599c8a3 ==============================
+[0m12:37:50.299853 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:37:50.300908 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:37:50.301578 [debug] [MainThread]: Tracking: tracking
+[0m12:37:50.363401 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:37:50.364279 [info ] [MainThread]: python version: 3.14.5
+[0m12:37:50.365043 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:37:50.366070 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:37:50.540360 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:37:50.542145 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:37:50.543556 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:37:50.547279 [info ] [MainThread]: adapter type: postgres
+[0m12:37:50.549325 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:37:51.148747 [info ] [MainThread]: Configuration:
+[0m12:37:51.149918 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:37:51.150902 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:37:51.151879 [info ] [MainThread]: Required dependencies:
+[0m12:37:51.152788 [debug] [MainThread]: Executing "git --help"
+[0m12:37:51.201702 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:37:51.202756 [debug] [MainThread]: STDERR: "b''"
+[0m12:37:51.203426 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:37:51.204316 [info ] [MainThread]: Connection:
+[0m12:37:51.205189 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:37:51.206051 [info ] [MainThread]:   port: 5432
+[0m12:37:51.206854 [info ] [MainThread]:   user: postgres
+[0m12:37:51.207695 [info ] [MainThread]:   database: stockpulse
+[0m12:37:51.208495 [info ] [MainThread]:   schema: analytics
+[0m12:37:51.209389 [info ] [MainThread]:   connect_timeout: 10
+[0m12:37:51.210869 [info ] [MainThread]:   role: None
+[0m12:37:51.212271 [info ] [MainThread]:   search_path: None
+[0m12:37:51.213665 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:37:51.215080 [info ] [MainThread]:   sslmode: None
+[0m12:37:51.216339 [info ] [MainThread]:   sslcert: None
+[0m12:37:51.218122 [info ] [MainThread]:   sslkey: None
+[0m12:37:51.219495 [info ] [MainThread]:   sslrootcert: None
+[0m12:37:51.220672 [info ] [MainThread]:   application_name: dbt
+[0m12:37:51.221517 [info ] [MainThread]:   autocommit: False
+[0m12:37:51.226000 [info ] [MainThread]:   retries: 1
+[0m12:37:51.227535 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:37:51.826079 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:37:51.941642 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:37:51.942337 [debug] [MainThread]: On debug: select 1 as id
+[0m12:37:51.942913 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:37:52.010705 [debug] [MainThread]: SQL status: SELECT 1 in 0.068 seconds
+[0m12:37:52.012073 [debug] [MainThread]: On debug: Close
+[0m12:37:52.012678 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:37:52.013693 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:37:52.016191 [debug] [MainThread]: Command `dbt debug` succeeded at 12:37:52.015920 after 2.25 seconds
+[0m12:37:52.016762 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:37:52.017395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961FD40770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961FE8B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001961F983130>]}
+[0m12:37:52.018249 [debug] [MainThread]: Flushing usage events
+[0m12:37:55.664425 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:45:20.861589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6DD6686E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6DAE82E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6DFE67C50>]}
+
+
+============================== 12:45:20.875066 | 6f56dd30-735f-4b36-be32-7f46cadfe39c ==============================
+[0m12:45:20.875066 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:45:20.877057 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:45:20.878249 [debug] [MainThread]: Tracking: tracking
+[0m12:45:20.950157 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:45:20.951038 [info ] [MainThread]: python version: 3.14.5
+[0m12:45:20.951807 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:45:20.952526 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:45:21.087253 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:45:21.088245 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:45:21.089045 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:45:21.091457 [info ] [MainThread]: adapter type: postgres
+[0m12:45:21.092486 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:45:21.465958 [info ] [MainThread]: Configuration:
+[0m12:45:21.466936 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:45:21.467766 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:45:21.468531 [info ] [MainThread]: Required dependencies:
+[0m12:45:21.469312 [debug] [MainThread]: Executing "git --help"
+[0m12:45:21.518989 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:45:21.519889 [debug] [MainThread]: STDERR: "b''"
+[0m12:45:21.520758 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:45:21.522346 [info ] [MainThread]: Connection:
+[0m12:45:21.525314 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:45:21.526307 [info ] [MainThread]:   port: 5432
+[0m12:45:21.527928 [info ] [MainThread]:   user: postgres
+[0m12:45:21.528970 [info ] [MainThread]:   database: stockpulse
+[0m12:45:21.529858 [info ] [MainThread]:   schema: analytics
+[0m12:45:21.532269 [info ] [MainThread]:   connect_timeout: 10
+[0m12:45:21.534162 [info ] [MainThread]:   role: None
+[0m12:45:21.535212 [info ] [MainThread]:   search_path: None
+[0m12:45:21.536199 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:45:21.537037 [info ] [MainThread]:   sslmode: None
+[0m12:45:21.537986 [info ] [MainThread]:   sslcert: None
+[0m12:45:21.538990 [info ] [MainThread]:   sslkey: None
+[0m12:45:21.540479 [info ] [MainThread]:   sslrootcert: None
+[0m12:45:21.541559 [info ] [MainThread]:   application_name: dbt
+[0m12:45:21.543429 [info ] [MainThread]:   autocommit: False
+[0m12:45:21.544886 [info ] [MainThread]:   retries: 1
+[0m12:45:21.546908 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:45:22.251246 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:45:22.421738 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:45:22.423150 [debug] [MainThread]: On debug: select 1 as id
+[0m12:45:22.424401 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:45:22.498077 [debug] [MainThread]: SQL status: SELECT 1 in 0.074 seconds
+[0m12:45:22.499484 [debug] [MainThread]: On debug: Close
+[0m12:45:22.500101 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:45:22.501065 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:45:22.503680 [debug] [MainThread]: Command `dbt debug` succeeded at 12:45:22.503357 after 2.05 seconds
+[0m12:45:22.504902 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:45:22.505537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6E010C770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6E02539B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B6DFC6F130>]}
+[0m12:45:22.506239 [debug] [MainThread]: Flushing usage events
+[0m12:45:24.751407 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:56:04.661621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07D27C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07AA92E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07FA77C50>]}
+
+
+============================== 12:56:04.670397 | 7e382c4e-6192-47fc-9e1d-b1278ccaddac ==============================
+[0m12:56:04.670397 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m12:56:04.672368 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m12:56:04.673744 [debug] [MainThread]: Tracking: tracking
+[0m12:56:04.751039 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m12:56:04.752036 [info ] [MainThread]: python version: 3.14.5
+[0m12:56:04.756616 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m12:56:04.759657 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:56:04.939299 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m12:56:04.942206 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m12:56:04.943472 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m12:56:04.946019 [info ] [MainThread]: adapter type: postgres
+[0m12:56:04.946919 [info ] [MainThread]: adapter version: 1.11.0
+[0m12:56:05.699579 [info ] [MainThread]: Configuration:
+[0m12:56:05.701293 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:56:05.708885 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:56:05.714634 [info ] [MainThread]: Required dependencies:
+[0m12:56:05.717280 [debug] [MainThread]: Executing "git --help"
+[0m12:56:05.796924 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:56:05.797845 [debug] [MainThread]: STDERR: "b''"
+[0m12:56:05.798569 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:56:05.799438 [info ] [MainThread]: Connection:
+[0m12:56:05.800276 [info ] [MainThread]:   host: 127.0.0.1
+[0m12:56:05.801086 [info ] [MainThread]:   port: 5432
+[0m12:56:05.801874 [info ] [MainThread]:   user: postgres
+[0m12:56:05.803429 [info ] [MainThread]:   database: stockpulse
+[0m12:56:05.805712 [info ] [MainThread]:   schema: analytics
+[0m12:56:05.807183 [info ] [MainThread]:   connect_timeout: 10
+[0m12:56:05.808555 [info ] [MainThread]:   role: None
+[0m12:56:05.810030 [info ] [MainThread]:   search_path: None
+[0m12:56:05.811421 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:56:05.812954 [info ] [MainThread]:   sslmode: None
+[0m12:56:05.814491 [info ] [MainThread]:   sslcert: None
+[0m12:56:05.815733 [info ] [MainThread]:   sslkey: None
+[0m12:56:05.816628 [info ] [MainThread]:   sslrootcert: None
+[0m12:56:05.817419 [info ] [MainThread]:   application_name: dbt
+[0m12:56:05.818192 [info ] [MainThread]:   autocommit: False
+[0m12:56:05.818943 [info ] [MainThread]:   retries: 1
+[0m12:56:05.822227 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m12:56:06.565545 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:56:06.698066 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:56:06.698807 [debug] [MainThread]: On debug: select 1 as id
+[0m12:56:06.699344 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:56:06.781024 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m12:56:06.864423 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m12:56:06.865402 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m12:56:06.866169 [debug] [MainThread]: On debug: No close available on handle
+[0m12:56:06.867205 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:56:06.869937 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:56:06.872206 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:56:06.874464 [debug] [MainThread]: Command `dbt debug` failed at 12:56:06.874157 after 2.74 seconds
+[0m12:56:06.875215 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:56:06.875960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07FC2C510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0000B79B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A07F87B130>]}
+[0m12:56:06.877188 [debug] [MainThread]: Flushing usage events
+[0m12:56:09.722959 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:08:40.504865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532388C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532109EE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532607FC50>]}
+
+
+============================== 13:08:40.526024 | 91f5327c-8e56-4d05-bdbf-5a035fc6c065 ==============================
+[0m13:08:40.526024 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m13:08:40.530763 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m13:08:40.532540 [debug] [MainThread]: Tracking: tracking
+[0m13:08:40.666869 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m13:08:40.669369 [info ] [MainThread]: python version: 3.14.5
+[0m13:08:40.671279 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m13:08:40.672980 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:08:41.329121 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m13:08:41.331117 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m13:08:41.333040 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m13:08:41.337832 [info ] [MainThread]: adapter type: postgres
+[0m13:08:41.340754 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:08:42.250417 [info ] [MainThread]: Configuration:
+[0m13:08:42.253238 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:08:42.255918 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:08:42.260304 [info ] [MainThread]: Required dependencies:
+[0m13:08:42.263412 [debug] [MainThread]: Executing "git --help"
+[0m13:08:42.393031 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:08:42.395469 [debug] [MainThread]: STDERR: "b''"
+[0m13:08:42.397481 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:08:42.400980 [info ] [MainThread]: Connection:
+[0m13:08:42.402841 [info ] [MainThread]:   host: 127.0.0.1
+[0m13:08:42.404741 [info ] [MainThread]:   port: 5432
+[0m13:08:42.406561 [info ] [MainThread]:   user: postgres
+[0m13:08:42.411010 [info ] [MainThread]:   database: stockpulse
+[0m13:08:42.413745 [info ] [MainThread]:   schema: analytics
+[0m13:08:42.417199 [info ] [MainThread]:   connect_timeout: 10
+[0m13:08:42.419026 [info ] [MainThread]:   role: None
+[0m13:08:42.421007 [info ] [MainThread]:   search_path: None
+[0m13:08:42.427190 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:08:42.433241 [info ] [MainThread]:   sslmode: None
+[0m13:08:42.435921 [info ] [MainThread]:   sslcert: None
+[0m13:08:42.438291 [info ] [MainThread]:   sslkey: None
+[0m13:08:42.450064 [info ] [MainThread]:   sslrootcert: None
+[0m13:08:42.452388 [info ] [MainThread]:   application_name: dbt
+[0m13:08:42.465221 [info ] [MainThread]:   autocommit: False
+[0m13:08:42.470717 [info ] [MainThread]:   retries: 1
+[0m13:08:42.476351 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m13:08:44.187766 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:08:51.837146 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:08:51.838762 [debug] [MainThread]: On debug: select 1 as id
+[0m13:08:51.840220 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:08:52.052273 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m13:08:52.184129 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m13:08:52.186110 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m13:08:52.187921 [debug] [MainThread]: On debug: No close available on handle
+[0m13:08:52.189920 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:08:52.191892 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:08:52.193706 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:08:52.197480 [debug] [MainThread]: Command `dbt debug` failed at 13:08:52.197031 after 12.49 seconds
+[0m13:08:52.200114 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:08:52.202604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253261DC510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532638B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025325E93130>]}
+[0m13:08:52.204370 [debug] [MainThread]: Flushing usage events
+[0m13:08:55.758232 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:10:45.029188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002047A11C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002047791EE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002047C917C50>]}
+
+
+============================== 13:10:45.043731 | 6b444ffc-4632-4e49-85fd-7463eaedcb3d ==============================
+[0m13:10:45.043731 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m13:10:45.046348 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --project-dir dbt-stock-pulse', 'log_path': 'dbt-stock-pulse\\logs'}
+[0m13:10:45.047778 [debug] [MainThread]: Tracking: tracking
+[0m13:10:45.139993 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m13:10:45.142978 [info ] [MainThread]: python version: 3.14.5
+[0m13:10:45.144033 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m13:10:45.145007 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:10:45.521310 [info ] [MainThread]: Using profiles dir at C:\Users\brian\.dbt
+[0m13:10:45.535935 [info ] [MainThread]: Using profiles.yml file at C:\Users\brian\.dbt\profiles.yml
+[0m13:10:45.552957 [info ] [MainThread]: Using dbt_project.yml file at dbt-stock-pulse\dbt_project.yml
+[0m13:10:45.598092 [info ] [MainThread]: adapter type: postgres
+[0m13:10:45.605012 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:10:46.640331 [info ] [MainThread]: Configuration:
+[0m13:10:46.642055 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:10:46.643726 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:10:46.645445 [info ] [MainThread]: Required dependencies:
+[0m13:10:46.647208 [debug] [MainThread]: Executing "git --help"
+[0m13:10:46.726470 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:10:46.728456 [debug] [MainThread]: STDERR: "b''"
+[0m13:10:46.729904 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:10:46.731434 [info ] [MainThread]: Connection:
+[0m13:10:46.733034 [info ] [MainThread]:   host: 127.0.0.1
+[0m13:10:46.734553 [info ] [MainThread]:   port: 5432
+[0m13:10:46.735775 [info ] [MainThread]:   user: postgres
+[0m13:10:46.737402 [info ] [MainThread]:   database: stockpulse
+[0m13:10:46.739500 [info ] [MainThread]:   schema: analytics
+[0m13:10:46.741368 [info ] [MainThread]:   connect_timeout: 10
+[0m13:10:46.743600 [info ] [MainThread]:   role: None
+[0m13:10:46.745820 [info ] [MainThread]:   search_path: None
+[0m13:10:46.748408 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:10:46.750111 [info ] [MainThread]:   sslmode: None
+[0m13:10:46.751968 [info ] [MainThread]:   sslcert: None
+[0m13:10:46.754294 [info ] [MainThread]:   sslkey: None
+[0m13:10:46.759607 [info ] [MainThread]:   sslrootcert: None
+[0m13:10:46.761570 [info ] [MainThread]:   application_name: dbt
+[0m13:10:46.763433 [info ] [MainThread]:   autocommit: False
+[0m13:10:46.766015 [info ] [MainThread]:   retries: 1
+[0m13:10:46.768746 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m13:10:47.739532 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:10:47.985557 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:10:47.987175 [debug] [MainThread]: On debug: select 1 as id
+[0m13:10:47.988702 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:10:48.101967 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m13:10:48.186942 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m13:10:48.188508 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m13:10:48.190276 [debug] [MainThread]: On debug: No close available on handle
+[0m13:10:48.191857 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m13:10:48.194126 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:10:48.195928 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m13:10:48.200312 [debug] [MainThread]: Command `dbt debug` failed at 13:10:48.199661 after 3.72 seconds
+[0m13:10:48.201888 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:10:48.203495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002047CA70510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002047CC1B9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002047C727130>]}
+[0m13:10:48.205354 [debug] [MainThread]: Flushing usage events
+[0m13:10:52.083203 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:13:43.524340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a38daec30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a36efe9c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a372de990>]}
+
+
+============================== 10:13:44.002876 | 2be32f90-a831-4d96-ae27-e5cf17e2f6a9 ==============================
+[0m10:13:44.002876 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m10:13:44.090679 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'log_format': 'default', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'invocation_command': 'dbt run --project-dir /opt/airflow/dbt-stock-pulse --profiles-dir /opt/airflow/dbt-stock-pulse', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'profiles_dir': '/opt/airflow/dbt-stock-pulse', 'hints_enabled': 'True', 'write_json': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/opt/airflow/dbt-stock-pulse/logs', 'no_print': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'printer_width': '80'}
+[0m10:13:44.136897 [debug] [MainThread]: Tracking: tracking
+[0m10:13:50.534741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a357c75f0>]}
+[0m10:13:51.523905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a35a5a0f0>]}
+[0m10:13:51.581593 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m10:13:54.106678 [debug] [MainThread]: checksum: 0adb8621f46bf3fa73ece2272d08b4625b46bd5bb3119f5200975a6451964a2b, vars: {}, profile: stockpulse, target: dev, version: 1.13.0b1
+[0m10:13:56.850885 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:13:56.854058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a3496c2f0>]}
+[0m10:14:27.225629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a33543a40>]}
+[0m10:14:27.233244 [info ] [MainThread]: [HINT] Your parse is taking a long time. You can speed up your parsing with the new rust parser: https://docs.getdbt.com/reference/global-configs/parsing?utm_source=dbt-cli#opt-in-v2-parser
+[0m10:14:27.252927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'hint_view', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a335768d0>]}
+[0m10:14:29.356822 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt-stock-pulse/target/manifest.json
+[0m10:14:29.440494 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt-stock-pulse/target/semantic_manifest.json
+[0m10:14:29.739464 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt-stock-pulse/target/osi_document.json
+[0m10:14:30.267333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a331c46b0>]}
+[0m10:14:30.297965 [info ] [MainThread]: Found 4 models, 19 data tests, 2 sources, 477 macros
+[0m10:14:30.305856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a339c54f0>]}
+[0m10:14:30.357407 [info ] [MainThread]: 
+[0m10:14:30.408708 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:14:30.418672 [info ] [MainThread]: 
+[0m10:14:30.432370 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m10:14:30.486040 [debug] [ThreadPool]: Acquiring new postgres connection 'list_stockpulse'
+[0m10:14:30.498841 [debug] [ThreadPool]: Acquiring new postgres connection 'list_stockpulse'
+[0m10:14:31.729445 [debug] [ThreadPool]: Using postgres connection "list_stockpulse"
+[0m10:14:31.731507 [debug] [ThreadPool]: Using postgres connection "list_stockpulse"
+[0m10:14:31.733078 [debug] [ThreadPool]: On list_stockpulse: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "list_stockpulse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m10:14:31.735110 [debug] [ThreadPool]: On list_stockpulse: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "list_stockpulse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m10:14:31.737112 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:14:31.745140 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:14:32.076427 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.339 seconds
+[0m10:14:32.078307 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.333 seconds
+[0m10:14:32.084690 [debug] [ThreadPool]: On list_stockpulse: Close
+[0m10:14:32.091460 [debug] [ThreadPool]: On list_stockpulse: Close
+[0m10:14:32.109154 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stockpulse, now list_stockpulse_analytics_marts)
+[0m10:14:32.112536 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stockpulse, now list_stockpulse_analytics_staging)
+[0m10:14:32.194809 [debug] [ThreadPool]: Using postgres connection "list_stockpulse_analytics_marts"
+[0m10:14:32.199882 [debug] [ThreadPool]: On list_stockpulse_analytics_marts: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "list_stockpulse_analytics_marts"} */
+select
+      'stockpulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics_marts'
+    union all
+    select
+      'stockpulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics_marts'
+    union all
+    select
+      'stockpulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics_marts'
+    union all
+    select distinct
+     'stockpulse' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics_marts'
+  
+[0m10:14:32.204536 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:14:32.207467 [debug] [ThreadPool]: Using postgres connection "list_stockpulse_analytics_staging"
+[0m10:14:32.229785 [debug] [ThreadPool]: On list_stockpulse_analytics_staging: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "list_stockpulse_analytics_staging"} */
+select
+      'stockpulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics_staging'
+    union all
+    select
+      'stockpulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics_staging'
+    union all
+    select
+      'stockpulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics_staging'
+    union all
+    select distinct
+     'stockpulse' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics_staging'
+  
+[0m10:14:32.232251 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:14:32.605171 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.373 seconds
+[0m10:14:32.607498 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.403 seconds
+[0m10:14:32.614714 [debug] [ThreadPool]: On list_stockpulse_analytics_staging: ROLLBACK
+[0m10:14:32.629022 [debug] [ThreadPool]: On list_stockpulse_analytics_marts: ROLLBACK
+[0m10:14:32.641724 [debug] [ThreadPool]: On list_stockpulse_analytics_staging: Close
+[0m10:14:32.647941 [debug] [ThreadPool]: On list_stockpulse_analytics_marts: Close
+[0m10:14:32.687911 [debug] [MainThread]: Using postgres connection "master"
+[0m10:14:32.701247 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m10:14:32.704293 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:14:32.908183 [debug] [MainThread]: SQL status: SELECT 2 in 0.204 seconds
+[0m10:14:32.914495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a331c63c0>]}
+[0m10:14:32.917007 [debug] [MainThread]: On master: ROLLBACK
+[0m10:14:32.928375 [debug] [MainThread]: On master: COMMIT
+[0m10:14:32.930590 [debug] [MainThread]: Using postgres connection "master"
+[0m10:14:32.932814 [debug] [MainThread]: On master: COMMIT
+[0m10:14:32.935507 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m10:14:32.945682 [debug] [MainThread]: On master: Close
+[0m10:14:32.965836 [debug] [Thread-1 (]: Began running node model.stockpulse.stg_products
+[0m10:14:32.968074 [debug] [Thread-2 (]: Began running node model.stockpulse.stg_sales
+[0m10:14:32.976495 [info ] [Thread-1 (]: 1 of 4 START sql view model analytics_staging.stg_products ..................... [RUN]
+[0m10:14:32.980194 [info ] [Thread-2 (]: 2 of 4 START sql view model analytics_staging.stg_sales ........................ [RUN]
+[0m10:14:32.983177 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stockpulse_analytics_marts, now model.stockpulse.stg_products)
+[0m10:14:32.988548 [debug] [Thread-1 (]: Began compiling node model.stockpulse.stg_products
+[0m10:14:32.985876 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_stockpulse_analytics_staging, now model.stockpulse.stg_sales)
+[0m10:14:33.015364 [debug] [Thread-2 (]: Began compiling node model.stockpulse.stg_sales
+[0m10:14:33.070683 [debug] [Thread-2 (]: Writing injected SQL for node "model.stockpulse.stg_sales"
+[0m10:14:33.068534 [debug] [Thread-1 (]: Writing injected SQL for node "model.stockpulse.stg_products"
+[0m10:14:33.090129 [debug] [Thread-2 (]: Began executing node model.stockpulse.stg_sales
+[0m10:14:33.111963 [debug] [Thread-1 (]: Began executing node model.stockpulse.stg_products
+[0m10:14:33.875978 [debug] [Thread-1 (]: Writing runtime sql for node "model.stockpulse.stg_products"
+[0m10:14:33.878884 [debug] [Thread-2 (]: Writing runtime sql for node "model.stockpulse.stg_sales"
+[0m10:14:33.915517 [debug] [Thread-2 (]: Using postgres connection "model.stockpulse.stg_sales"
+[0m10:14:33.918014 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_sales"} */
+
+  create view "stockpulse"."analytics_staging"."stg_sales__dbt_tmp"
+    
+    
+  as (
+    select
+    id as sale_record_id,
+    transaction_id,
+    sku,
+    product_id,
+    sold_at,
+    quantity,
+    unit_price,
+    unit_cost,
+    source_run_id,
+    created_at as record_created_at
+from "stockpulse"."public"."ingestion_salerecord"
+  );
+[0m10:14:33.935566 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:14:33.953941 [debug] [Thread-1 (]: Using postgres connection "model.stockpulse.stg_products"
+[0m10:14:33.956375 [debug] [Thread-1 (]: On model.stockpulse.stg_products: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_products"} */
+
+  create view "stockpulse"."analytics_staging"."stg_products__dbt_tmp"
+    
+    
+  as (
+    select
+    id as product_id,
+    sku,
+    name as product_name,
+    category,
+    active as is_active,
+    created_at as product_created_at,
+    updated_at as product_updated_at
+from "stockpulse"."public"."ingestion_product"
+  );
+[0m10:14:33.959130 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:14:34.192410 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.233 seconds
+[0m10:14:34.194605 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.259 seconds
+[0m10:14:34.266367 [debug] [Thread-1 (]: Using postgres connection "model.stockpulse.stg_products"
+[0m10:14:34.268407 [debug] [Thread-2 (]: Using postgres connection "model.stockpulse.stg_sales"
+[0m10:14:34.270494 [debug] [Thread-1 (]: On model.stockpulse.stg_products: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_products"} */
+alter table "stockpulse"."analytics_staging"."stg_products" rename to "stg_products__dbt_backup"
+[0m10:14:34.279623 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_sales"} */
+alter table "stockpulse"."analytics_staging"."stg_sales" rename to "stg_sales__dbt_backup"
+[0m10:14:34.283901 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m10:14:34.286159 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m10:14:34.309498 [debug] [Thread-1 (]: Using postgres connection "model.stockpulse.stg_products"
+[0m10:14:34.323218 [debug] [Thread-1 (]: On model.stockpulse.stg_products: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_products"} */
+alter table "stockpulse"."analytics_staging"."stg_products__dbt_tmp" rename to "stg_products"
+[0m10:14:34.339375 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.008 seconds
+[0m10:14:34.329798 [debug] [Thread-2 (]: Using postgres connection "model.stockpulse.stg_sales"
+[0m10:14:34.377032 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_sales"} */
+alter table "stockpulse"."analytics_staging"."stg_sales__dbt_tmp" rename to "stg_sales"
+[0m10:14:34.408486 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.011 seconds
+[0m10:14:34.630130 [debug] [Thread-1 (]: On model.stockpulse.stg_products: COMMIT
+[0m10:14:34.632014 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: COMMIT
+[0m10:14:34.634093 [debug] [Thread-1 (]: Using postgres connection "model.stockpulse.stg_products"
+[0m10:14:34.636590 [debug] [Thread-2 (]: Using postgres connection "model.stockpulse.stg_sales"
+[0m10:14:34.638997 [debug] [Thread-1 (]: On model.stockpulse.stg_products: COMMIT
+[0m10:14:34.646895 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: COMMIT
+[0m10:14:34.655023 [debug] [Thread-1 (]: SQL status: COMMIT in 0.006 seconds
+[0m10:14:34.666930 [debug] [Thread-2 (]: SQL status: COMMIT in 0.017 seconds
+[0m10:14:34.730629 [debug] [Thread-2 (]: Applying DROP to: "stockpulse"."analytics_staging"."stg_sales__dbt_backup"
+[0m10:14:34.733231 [debug] [Thread-1 (]: Applying DROP to: "stockpulse"."analytics_staging"."stg_products__dbt_backup"
+[0m10:14:34.803344 [debug] [Thread-2 (]: Using postgres connection "model.stockpulse.stg_sales"
+[0m10:14:34.818983 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_sales"} */
+drop view if exists "stockpulse"."analytics_staging"."stg_sales__dbt_backup" cascade
+[0m10:14:34.808327 [debug] [Thread-1 (]: Using postgres connection "model.stockpulse.stg_products"
+[0m10:14:34.824712 [debug] [Thread-1 (]: On model.stockpulse.stg_products: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.stg_products"} */
+drop view if exists "stockpulse"."analytics_staging"."stg_products__dbt_backup" cascade
+[0m10:14:34.923603 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.096 seconds
+[0m10:14:34.946657 [debug] [Thread-1 (]: On model.stockpulse.stg_products: Close
+[0m10:14:34.975093 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.153 seconds
+[0m10:14:34.984863 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a33d75d30>]}
+[0m10:14:34.990681 [debug] [Thread-2 (]: On model.stockpulse.stg_sales: Close
+[0m10:14:35.001809 [info ] [Thread-1 (]: 1 of 4 OK created sql view model analytics_staging.stg_products ................ [[32mCREATE VIEW[0m in 1.98s]
+[0m10:14:35.011660 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a331a6840>]}
+[0m10:14:35.019295 [debug] [Thread-1 (]: Finished running node model.stockpulse.stg_products
+[0m10:14:35.020062 [info ] [Thread-2 (]: 2 of 4 OK created sql view model analytics_staging.stg_sales ................... [[32mCREATE VIEW[0m in 2.03s]
+[0m10:14:35.026522 [debug] [Thread-2 (]: Finished running node model.stockpulse.stg_sales
+[0m10:14:35.035265 [debug] [Thread-4 (]: Began running node model.stockpulse.fct_daily_sales
+[0m10:14:35.037373 [debug] [Thread-3 (]: Began running node model.stockpulse.mart_product_performance
+[0m10:14:35.042894 [info ] [Thread-3 (]: 4 of 4 START sql table model analytics_marts.mart_product_performance .......... [RUN]
+[0m10:14:35.039795 [info ] [Thread-4 (]: 3 of 4 START sql table model analytics_marts.fct_daily_sales ................... [RUN]
+[0m10:14:35.054522 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.stockpulse.mart_product_performance'
+[0m10:14:35.057631 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.stockpulse.fct_daily_sales'
+[0m10:14:35.060246 [debug] [Thread-3 (]: Began compiling node model.stockpulse.mart_product_performance
+[0m10:14:35.071232 [debug] [Thread-4 (]: Began compiling node model.stockpulse.fct_daily_sales
+[0m10:14:35.089930 [debug] [Thread-3 (]: Writing injected SQL for node "model.stockpulse.mart_product_performance"
+[0m10:14:35.131270 [debug] [Thread-4 (]: Writing injected SQL for node "model.stockpulse.fct_daily_sales"
+[0m10:14:35.152480 [debug] [Thread-3 (]: Began executing node model.stockpulse.mart_product_performance
+[0m10:14:35.182199 [debug] [Thread-4 (]: Began executing node model.stockpulse.fct_daily_sales
+[0m10:14:35.510541 [debug] [Thread-3 (]: Writing runtime sql for node "model.stockpulse.mart_product_performance"
+[0m10:14:35.512829 [debug] [Thread-4 (]: Writing runtime sql for node "model.stockpulse.fct_daily_sales"
+[0m10:14:35.851452 [debug] [Thread-4 (]: Using postgres connection "model.stockpulse.fct_daily_sales"
+[0m10:14:35.858498 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.fct_daily_sales"} */
+
+  
+    
+
+  create  table "stockpulse"."analytics_marts"."fct_daily_sales__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with sales as (
+    select *
+    from "stockpulse"."analytics_staging"."stg_sales"
+
+),
+
+daily_aggregates as (
+
+    select
+        cast(sold_at as date) as sale_date,
+        count(*) as sales_lines,
+        count(distinct transaction_id) as transactions,
+        sum(quantity) as units_sold,
+        sum(quantity * unit_price) as revenue,
+        sum(quantity * unit_cost) as cost_of_goods_sold
+    from sales
+    group by cast(sold_at as date)
+
+)
+
+select
+    sale_date,
+    sales_lines,
+    transactions,
+    units_sold,
+    revenue,
+    cost_of_goods_sold,
+    revenue - cost_of_goods_sold as gross_profit,
+    case
+        when revenue = 0 then null
+        else (revenue - cost_of_goods_sold) / revenue
+    end as gross_margin_rate
+from daily_aggregates
+  );
+  
+[0m10:14:35.861808 [debug] [Thread-3 (]: Using postgres connection "model.stockpulse.mart_product_performance"
+[0m10:14:35.864316 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:14:35.980525 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.mart_product_performance"} */
+
+  
+    
+
+  create  table "stockpulse"."analytics_marts"."mart_product_performance__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with sales as (
+    select *
+    from "stockpulse"."analytics_staging"."stg_sales"
+),
+
+products as (
+    select *
+    from "stockpulse"."analytics_staging"."stg_products"
+),
+
+product_aggregates as (
+    select
+        sales.sku,
+        products.product_name,
+        products.category,
+        sum(sales.quantity) as units_sold,
+        count(*) as sales_lines,
+        count(distinct sales.transaction_id) as transactions,
+        sum(sales.quantity * sales.unit_price) as revenue,
+        sum(sales.quantity * sales.unit_cost) as cost_of_goods_sold
+    from sales
+    left join products
+        on sales.product_id = products.product_id
+    group by
+        sales.sku,
+        products.product_name,
+        products.category
+)
+
+select
+    sku,
+    coalesce(product_name, sku) as product_name,
+    coalesce(category, 'Uncategorised') as category,
+    units_sold,
+    sales_lines,
+    transactions,
+    revenue,
+    cost_of_goods_sold,
+    revenue - cost_of_goods_sold as gross_profit
+from product_aggregates
+  );
+  
+[0m10:14:36.035919 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:14:36.591928 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.727 seconds
+[0m10:14:36.728458 [debug] [Thread-3 (]: SQL status: SELECT 5 in 0.692 seconds
+[0m10:14:36.781157 [debug] [Thread-4 (]: Using postgres connection "model.stockpulse.fct_daily_sales"
+[0m10:14:37.105181 [debug] [Thread-3 (]: Using postgres connection "model.stockpulse.mart_product_performance"
+[0m10:14:37.285679 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.fct_daily_sales"} */
+alter table "stockpulse"."analytics_marts"."fct_daily_sales" rename to "fct_daily_sales__dbt_backup"
+[0m10:14:37.404911 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.mart_product_performance"} */
+alter table "stockpulse"."analytics_marts"."mart_product_performance" rename to "mart_product_performance__dbt_backup"
+[0m10:14:37.565934 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m10:14:37.672126 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m10:14:37.857582 [debug] [Thread-4 (]: Using postgres connection "model.stockpulse.fct_daily_sales"
+[0m10:14:37.913090 [debug] [Thread-3 (]: Using postgres connection "model.stockpulse.mart_product_performance"
+[0m10:14:37.998679 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.fct_daily_sales"} */
+alter table "stockpulse"."analytics_marts"."fct_daily_sales__dbt_tmp" rename to "fct_daily_sales"
+[0m10:14:38.118665 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.mart_product_performance"} */
+alter table "stockpulse"."analytics_marts"."mart_product_performance__dbt_tmp" rename to "mart_product_performance"
+[0m10:14:38.277661 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m10:14:38.284421 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m10:14:38.400165 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: COMMIT
+[0m10:14:38.470229 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: COMMIT
+[0m10:14:38.631886 [debug] [Thread-4 (]: Using postgres connection "model.stockpulse.fct_daily_sales"
+[0m10:14:38.791609 [debug] [Thread-3 (]: Using postgres connection "model.stockpulse.mart_product_performance"
+[0m10:14:38.851475 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: COMMIT
+[0m10:14:39.004808 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: COMMIT
+[0m10:14:39.226298 [debug] [Thread-4 (]: SQL status: COMMIT in 0.069 seconds
+[0m10:14:39.228766 [debug] [Thread-3 (]: SQL status: COMMIT in 0.070 seconds
+[0m10:14:39.288922 [debug] [Thread-4 (]: Applying DROP to: "stockpulse"."analytics_marts"."fct_daily_sales__dbt_backup"
+[0m10:14:39.380058 [debug] [Thread-3 (]: Applying DROP to: "stockpulse"."analytics_marts"."mart_product_performance__dbt_backup"
+[0m10:14:39.475995 [debug] [Thread-4 (]: Using postgres connection "model.stockpulse.fct_daily_sales"
+[0m10:14:39.510407 [debug] [Thread-3 (]: Using postgres connection "model.stockpulse.mart_product_performance"
+[0m10:14:39.543486 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.fct_daily_sales"} */
+drop table if exists "stockpulse"."analytics_marts"."fct_daily_sales__dbt_backup" cascade
+[0m10:14:39.594740 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "model.stockpulse.mart_product_performance"} */
+drop table if exists "stockpulse"."analytics_marts"."mart_product_performance__dbt_backup" cascade
+[0m10:14:39.742181 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.051 seconds
+[0m10:14:39.833274 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.064 seconds
+[0m10:14:39.892333 [debug] [Thread-4 (]: On model.stockpulse.fct_daily_sales: Close
+[0m10:14:40.037434 [debug] [Thread-3 (]: On model.stockpulse.mart_product_performance: Close
+[0m10:14:40.206083 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a331a5eb0>]}
+[0m10:14:40.216605 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2be32f90-a831-4d96-ae27-e5cf17e2f6a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a3590a0c0>]}
+[0m10:14:40.254025 [info ] [Thread-4 (]: 3 of 4 OK created sql table model analytics_marts.fct_daily_sales .............. [[32mSELECT 1[0m in 5.15s]
+[0m10:14:40.434329 [info ] [Thread-3 (]: 4 of 4 OK created sql table model analytics_marts.mart_product_performance ..... [[32mSELECT 5[0m in 5.17s]
+[0m10:14:40.493501 [debug] [Thread-4 (]: Finished running node model.stockpulse.fct_daily_sales
+[0m10:14:40.536581 [debug] [Thread-3 (]: Finished running node model.stockpulse.mart_product_performance
+[0m10:14:40.668966 [debug] [MainThread]: On master: COMMIT
+[0m10:14:40.826666 [debug] [MainThread]: Using postgres connection "master"
+[0m10:14:40.878367 [debug] [MainThread]: On master: COMMIT
+[0m10:14:40.881080 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:14:40.954524 [debug] [MainThread]: SQL status: COMMIT in 0.074 seconds
+[0m10:14:40.967066 [debug] [MainThread]: On master: Close
+[0m10:14:41.014071 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:14:41.115309 [debug] [MainThread]: Connection 'model.stockpulse.stg_products' was properly closed.
+[0m10:14:41.231514 [debug] [MainThread]: Connection 'model.stockpulse.stg_sales' was properly closed.
+[0m10:14:41.250058 [debug] [MainThread]: Connection 'model.stockpulse.mart_product_performance' was properly closed.
+[0m10:14:41.259517 [debug] [MainThread]: Connection 'model.stockpulse.fct_daily_sales' was properly closed.
+[0m10:14:41.295740 [info ] [MainThread]: 
+[0m10:14:41.299980 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 10.86 seconds (10.86s).
+[0m10:14:41.333311 [debug] [MainThread]: Command end result
+[0m10:14:43.203069 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt-stock-pulse/target/manifest.json
+[0m10:14:43.279857 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt-stock-pulse/target/semantic_manifest.json
+[0m10:14:43.379690 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt-stock-pulse/target/osi_document.json
+[0m10:14:43.487811 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt-stock-pulse/target/run_results.json
+[0m10:14:43.489577 [info ] [MainThread]: 
+[0m10:14:43.505334 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:14:43.552816 [info ] [MainThread]: 
+[0m10:14:43.582823 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m10:14:43.598217 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 64.77973, "process_in_blocks": "80856", "process_kernel_time": 9.475017, "process_mem_max_rss": "169184", "process_out_blocks": "30480", "process_user_time": 58.10152}
+[0m10:14:43.602077 [debug] [MainThread]: Command `dbt run` succeeded at 10:14:43.601627 after 64.78 seconds
+[0m10:14:43.605336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a360f6270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a36c88aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a363207d0>]}
+[0m10:14:43.618237 [debug] [MainThread]: Flushing usage events
+[0m10:14:47.984856 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:15:18.414497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c1694aff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c1774dca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c193164b0>]}
+
+
+============================== 10:15:18.439902 | 3ea1a040-ece6-4362-b1cc-8434d7dcda52 ==============================
+[0m10:15:18.439902 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m10:15:18.453712 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'log_cache_events': 'False', 'debug': 'False', 'static_parser': 'True', 'empty': 'None', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'partial_parse': 'True', 'version_check': 'True', 'log_path': '/opt/airflow/dbt-stock-pulse/logs', 'use_colors': 'True', 'fail_fast': 'False', 'log_format': 'default', 'printer_width': '80', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test --project-dir /opt/airflow/dbt-stock-pulse --profiles-dir /opt/airflow/dbt-stock-pulse', 'no_print': 'None', 'profiles_dir': '/opt/airflow/dbt-stock-pulse', 'introspect': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'quiet': 'False', 'write_json': 'True'}
+[0m10:15:18.461718 [debug] [MainThread]: Tracking: tracking
+[0m10:15:19.913606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ea1a040-ece6-4362-b1cc-8434d7dcda52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c19217bc0>]}
+[0m10:15:20.952226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ea1a040-ece6-4362-b1cc-8434d7dcda52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c17242e70>]}
+[0m10:15:21.126610 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m10:15:22.529709 [debug] [MainThread]: checksum: 0adb8621f46bf3fa73ece2272d08b4625b46bd5bb3119f5200975a6451964a2b, vars: {}, profile: stockpulse, target: dev, version: 1.13.0b1
+[0m10:15:25.807522 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:15:25.813401 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:15:25.816412 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:15:25.914783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ea1a040-ece6-4362-b1cc-8434d7dcda52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c1511dfd0>]}
+[0m10:15:27.508165 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt-stock-pulse/target/manifest.json
+[0m10:15:27.570326 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt-stock-pulse/target/semantic_manifest.json
+[0m10:15:27.775604 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt-stock-pulse/target/osi_document.json
+[0m10:15:27.983791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ea1a040-ece6-4362-b1cc-8434d7dcda52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c141feab0>]}
+[0m10:15:27.987172 [info ] [MainThread]: Found 4 models, 19 data tests, 2 sources, 477 macros
+[0m10:15:27.989537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ea1a040-ece6-4362-b1cc-8434d7dcda52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c1516d4f0>]}
+[0m10:15:28.021048 [info ] [MainThread]: 
+[0m10:15:28.023661 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:15:28.026031 [info ] [MainThread]: 
+[0m10:15:28.037817 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m10:15:28.064395 [debug] [ThreadPool]: Acquiring new postgres connection 'list_stockpulse_analytics_marts'
+[0m10:15:28.073244 [debug] [ThreadPool]: Acquiring new postgres connection 'list_stockpulse_analytics_staging'
+[0m10:15:28.528156 [debug] [ThreadPool]: Using postgres connection "list_stockpulse_analytics_staging"
+[0m10:15:28.522586 [debug] [ThreadPool]: Using postgres connection "list_stockpulse_analytics_marts"
+[0m10:15:28.538280 [debug] [ThreadPool]: On list_stockpulse_analytics_staging: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "list_stockpulse_analytics_staging"} */
+select
+      'stockpulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics_staging'
+    union all
+    select
+      'stockpulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics_staging'
+    union all
+    select
+      'stockpulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics_staging'
+    union all
+    select distinct
+     'stockpulse' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics_staging'
+  
+[0m10:15:28.541265 [debug] [ThreadPool]: On list_stockpulse_analytics_marts: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "list_stockpulse_analytics_marts"} */
+select
+      'stockpulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'analytics_marts'
+    union all
+    select
+      'stockpulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'analytics_marts'
+    union all
+    select
+      'stockpulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'analytics_marts'
+    union all
+    select distinct
+     'stockpulse' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'analytics_marts'
+  
+[0m10:15:28.551294 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:15:28.556949 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:15:28.659954 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.103 seconds
+[0m10:15:28.678674 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.127 seconds
+[0m10:15:28.685874 [debug] [ThreadPool]: On list_stockpulse_analytics_marts: ROLLBACK
+[0m10:15:28.723765 [debug] [ThreadPool]: On list_stockpulse_analytics_staging: ROLLBACK
+[0m10:15:28.725970 [debug] [ThreadPool]: On list_stockpulse_analytics_marts: Close
+[0m10:15:28.728562 [debug] [ThreadPool]: On list_stockpulse_analytics_staging: Close
+[0m10:15:28.789289 [debug] [MainThread]: Using postgres connection "master"
+[0m10:15:28.796251 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m10:15:28.814589 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:15:28.889359 [debug] [MainThread]: SQL status: SELECT 2 in 0.075 seconds
+[0m10:15:28.901949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ea1a040-ece6-4362-b1cc-8434d7dcda52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c15129550>]}
+[0m10:15:28.914326 [debug] [MainThread]: On master: ROLLBACK
+[0m10:15:28.931221 [debug] [MainThread]: On master: COMMIT
+[0m10:15:28.941242 [debug] [MainThread]: Using postgres connection "master"
+[0m10:15:28.948223 [debug] [MainThread]: On master: COMMIT
+[0m10:15:28.975145 [debug] [MainThread]: SQL status: COMMIT in 0.024 seconds
+[0m10:15:28.978657 [debug] [MainThread]: On master: Close
+[0m10:15:29.043663 [debug] [Thread-1 (]: Began running node test.stockpulse.assert_no_negative_gross_profit_inputs
+[0m10:15:29.058672 [debug] [Thread-2 (]: Began running node test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed
+[0m10:15:29.060770 [debug] [Thread-3 (]: Began running node test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152
+[0m10:15:29.080600 [info ] [Thread-3 (]: 3 of 19 START test not_null_fct_daily_sales_revenue ............................ [RUN]
+[0m10:15:29.062824 [info ] [Thread-1 (]: 1 of 19 START test assert_no_negative_gross_profit_inputs ...................... [RUN]
+[0m10:15:29.075285 [info ] [Thread-2 (]: 2 of 19 START test not_null_fct_daily_sales_gross_profit ....................... [RUN]
+[0m10:15:29.071154 [debug] [Thread-4 (]: Began running node test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb
+[0m10:15:29.092691 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152'
+[0m10:15:29.108782 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stockpulse_analytics_staging, now test.stockpulse.assert_no_negative_gross_profit_inputs)
+[0m10:15:29.123725 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_stockpulse_analytics_marts, now test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed)
+[0m10:15:29.126921 [info ] [Thread-4 (]: 4 of 19 START test not_null_fct_daily_sales_sale_date .......................... [RUN]
+[0m10:15:29.171693 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb'
+[0m10:15:29.176727 [debug] [Thread-4 (]: Began compiling node test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb
+[0m10:15:29.155545 [debug] [Thread-2 (]: Began compiling node test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed
+[0m10:15:29.135927 [debug] [Thread-3 (]: Began compiling node test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152
+[0m10:15:29.140436 [debug] [Thread-1 (]: Began compiling node test.stockpulse.assert_no_negative_gross_profit_inputs
+[0m10:15:29.471268 [debug] [Thread-1 (]: Writing injected SQL for node "test.stockpulse.assert_no_negative_gross_profit_inputs"
+[0m10:15:29.567898 [debug] [Thread-4 (]: Writing injected SQL for node "test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb"
+[0m10:15:29.571918 [debug] [Thread-3 (]: Writing injected SQL for node "test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152"
+[0m10:15:29.577579 [debug] [Thread-2 (]: Writing injected SQL for node "test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed"
+[0m10:15:29.585757 [debug] [Thread-1 (]: Began executing node test.stockpulse.assert_no_negative_gross_profit_inputs
+[0m10:15:29.648512 [debug] [Thread-4 (]: Began executing node test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb
+[0m10:15:29.664329 [debug] [Thread-3 (]: Began executing node test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152
+[0m10:15:29.857028 [debug] [Thread-2 (]: Began executing node test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed
+[0m10:15:30.029764 [debug] [Thread-1 (]: Writing runtime sql for node "test.stockpulse.assert_no_negative_gross_profit_inputs"
+[0m10:15:30.011058 [debug] [Thread-4 (]: Writing runtime sql for node "test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb"
+[0m10:15:30.057423 [debug] [Thread-2 (]: Writing runtime sql for node "test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed"
+[0m10:15:30.073055 [debug] [Thread-3 (]: Writing runtime sql for node "test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152"
+[0m10:15:30.102712 [debug] [Thread-1 (]: Using postgres connection "test.stockpulse.assert_no_negative_gross_profit_inputs"
+[0m10:15:30.106208 [debug] [Thread-1 (]: On test.stockpulse.assert_no_negative_gross_profit_inputs: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.assert_no_negative_gross_profit_inputs"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select *
+from "stockpulse"."analytics_staging"."stg_sales"
+where quantity <= 0
+   or unit_price < 0
+   or unit_cost < 0
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.111872 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:15:30.114761 [debug] [Thread-4 (]: Using postgres connection "test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb"
+[0m10:15:30.120923 [debug] [Thread-3 (]: Using postgres connection "test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152"
+[0m10:15:30.123944 [debug] [Thread-2 (]: Using postgres connection "test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed"
+[0m10:15:30.134714 [debug] [Thread-4 (]: On test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sale_date
+from "stockpulse"."analytics_marts"."fct_daily_sales"
+where sale_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.137513 [debug] [Thread-3 (]: On test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue
+from "stockpulse"."analytics_marts"."fct_daily_sales"
+where revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.140543 [debug] [Thread-2 (]: On test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select gross_profit
+from "stockpulse"."analytics_marts"."fct_daily_sales"
+where gross_profit is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.185001 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.073 seconds
+[0m10:15:30.187938 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:15:30.196636 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:15:30.199856 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:15:30.237110 [debug] [Thread-1 (]: On test.stockpulse.assert_no_negative_gross_profit_inputs: ROLLBACK
+[0m10:15:30.244163 [debug] [Thread-1 (]: On test.stockpulse.assert_no_negative_gross_profit_inputs: Close
+[0m10:15:30.263035 [info ] [Thread-1 (]: 1 of 19 PASS assert_no_negative_gross_profit_inputs ............................ [[32mPASS[0m in 1.15s]
+[0m10:15:30.278631 [debug] [Thread-1 (]: Finished running node test.stockpulse.assert_no_negative_gross_profit_inputs
+[0m10:15:30.271874 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.084 seconds
+[0m10:15:30.302015 [debug] [Thread-1 (]: Began running node test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f
+[0m10:15:30.310060 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.110 seconds
+[0m10:15:30.321748 [debug] [Thread-4 (]: On test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb: ROLLBACK
+[0m10:15:30.335033 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.135 seconds
+[0m10:15:30.353031 [debug] [Thread-3 (]: On test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152: ROLLBACK
+[0m10:15:30.337679 [info ] [Thread-1 (]: 5 of 19 START test not_null_fct_daily_sales_sales_lines ........................ [RUN]
+[0m10:15:30.356608 [debug] [Thread-4 (]: On test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb: Close
+[0m10:15:30.371259 [debug] [Thread-2 (]: On test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed: ROLLBACK
+[0m10:15:30.383175 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.stockpulse.assert_no_negative_gross_profit_inputs, now test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f)
+[0m10:15:30.374648 [debug] [Thread-3 (]: On test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152: Close
+[0m10:15:30.415604 [debug] [Thread-2 (]: On test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed: Close
+[0m10:15:30.417787 [debug] [Thread-1 (]: Began compiling node test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f
+[0m10:15:30.395239 [info ] [Thread-4 (]: 4 of 19 PASS not_null_fct_daily_sales_sale_date ................................ [[32mPASS[0m in 1.22s]
+[0m10:15:30.433623 [info ] [Thread-2 (]: 2 of 19 PASS not_null_fct_daily_sales_gross_profit ............................. [[32mPASS[0m in 1.31s]
+[0m10:15:30.421651 [info ] [Thread-3 (]: 3 of 19 PASS not_null_fct_daily_sales_revenue .................................. [[32mPASS[0m in 1.33s]
+[0m10:15:30.524278 [debug] [Thread-3 (]: Finished running node test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152
+[0m10:15:30.492958 [debug] [Thread-2 (]: Finished running node test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed
+[0m10:15:30.456153 [debug] [Thread-4 (]: Finished running node test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb
+[0m10:15:30.528530 [debug] [Thread-1 (]: Writing injected SQL for node "test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f"
+[0m10:15:30.531097 [debug] [Thread-3 (]: Began running node test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c
+[0m10:15:30.540695 [debug] [Thread-2 (]: Began running node test.stockpulse.not_null_mart_product_performance_revenue.857030baeb
+[0m10:15:30.574107 [info ] [Thread-2 (]: 7 of 19 START test not_null_mart_product_performance_revenue ................... [RUN]
+[0m10:15:30.570930 [info ] [Thread-3 (]: 6 of 19 START test not_null_mart_product_performance_gross_profit .............. [RUN]
+[0m10:15:30.544046 [debug] [Thread-4 (]: Began running node test.stockpulse.not_null_mart_product_performance_sku.eec162c165
+[0m10:15:30.583249 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_fct_daily_sales_gross_profit.0f135b61ed, now test.stockpulse.not_null_mart_product_performance_revenue.857030baeb)
+[0m10:15:30.587569 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_fct_daily_sales_revenue.f6ff847152, now test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c)
+[0m10:15:30.591411 [info ] [Thread-4 (]: 8 of 19 START test not_null_mart_product_performance_sku ....................... [RUN]
+[0m10:15:30.595163 [debug] [Thread-2 (]: Began compiling node test.stockpulse.not_null_mart_product_performance_revenue.857030baeb
+[0m10:15:30.599797 [debug] [Thread-3 (]: Began compiling node test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c
+[0m10:15:30.605226 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_fct_daily_sales_sale_date.d9a19cc6fb, now test.stockpulse.not_null_mart_product_performance_sku.eec162c165)
+[0m10:15:30.614289 [debug] [Thread-1 (]: Began executing node test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f
+[0m10:15:30.679237 [debug] [Thread-4 (]: Began compiling node test.stockpulse.not_null_mart_product_performance_sku.eec162c165
+[0m10:15:30.688846 [debug] [Thread-2 (]: Writing injected SQL for node "test.stockpulse.not_null_mart_product_performance_revenue.857030baeb"
+[0m10:15:30.716326 [debug] [Thread-1 (]: Writing runtime sql for node "test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f"
+[0m10:15:30.723812 [debug] [Thread-3 (]: Writing injected SQL for node "test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c"
+[0m10:15:30.770952 [debug] [Thread-4 (]: Writing injected SQL for node "test.stockpulse.not_null_mart_product_performance_sku.eec162c165"
+[0m10:15:30.795076 [debug] [Thread-2 (]: Began executing node test.stockpulse.not_null_mart_product_performance_revenue.857030baeb
+[0m10:15:30.813000 [debug] [Thread-3 (]: Began executing node test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c
+[0m10:15:30.817267 [debug] [Thread-2 (]: Writing runtime sql for node "test.stockpulse.not_null_mart_product_performance_revenue.857030baeb"
+[0m10:15:30.853246 [debug] [Thread-1 (]: Using postgres connection "test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f"
+[0m10:15:30.855873 [debug] [Thread-4 (]: Began executing node test.stockpulse.not_null_mart_product_performance_sku.eec162c165
+[0m10:15:30.859629 [debug] [Thread-3 (]: Writing runtime sql for node "test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c"
+[0m10:15:30.864368 [debug] [Thread-1 (]: On test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sales_lines
+from "stockpulse"."analytics_marts"."fct_daily_sales"
+where sales_lines is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.883527 [debug] [Thread-4 (]: Writing runtime sql for node "test.stockpulse.not_null_mart_product_performance_sku.eec162c165"
+[0m10:15:30.886824 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:15:30.907054 [debug] [Thread-4 (]: Using postgres connection "test.stockpulse.not_null_mart_product_performance_sku.eec162c165"
+[0m10:15:30.917635 [debug] [Thread-4 (]: On test.stockpulse.not_null_mart_product_performance_sku.eec162c165: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_mart_product_performance_sku.eec162c165"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sku
+from "stockpulse"."analytics_marts"."mart_product_performance"
+where sku is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.921147 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:15:30.923959 [debug] [Thread-2 (]: Using postgres connection "test.stockpulse.not_null_mart_product_performance_revenue.857030baeb"
+[0m10:15:30.956768 [debug] [Thread-3 (]: Using postgres connection "test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c"
+[0m10:15:30.969450 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.075 seconds
+[0m10:15:30.972717 [debug] [Thread-2 (]: On test.stockpulse.not_null_mart_product_performance_revenue.857030baeb: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_mart_product_performance_revenue.857030baeb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select revenue
+from "stockpulse"."analytics_marts"."mart_product_performance"
+where revenue is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:30.975307 [debug] [Thread-3 (]: On test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select gross_profit
+from "stockpulse"."analytics_marts"."mart_product_performance"
+where gross_profit is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:31.005278 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:15:30.991457 [debug] [Thread-1 (]: On test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f: ROLLBACK
+[0m10:15:31.043321 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.122 seconds
+[0m10:15:31.015411 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:15:31.062807 [debug] [Thread-4 (]: On test.stockpulse.not_null_mart_product_performance_sku.eec162c165: ROLLBACK
+[0m10:15:31.065025 [debug] [Thread-1 (]: On test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f: Close
+[0m10:15:31.089040 [info ] [Thread-1 (]: 5 of 19 PASS not_null_fct_daily_sales_sales_lines .............................. [[32mPASS[0m in 0.71s]
+[0m10:15:31.078017 [debug] [Thread-4 (]: On test.stockpulse.not_null_mart_product_performance_sku.eec162c165: Close
+[0m10:15:31.092589 [debug] [Thread-1 (]: Finished running node test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f
+[0m10:15:31.117765 [debug] [Thread-1 (]: Began running node test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e
+[0m10:15:31.121629 [info ] [Thread-1 (]: 9 of 19 START test not_null_mart_product_performance_units_sold ................ [RUN]
+[0m10:15:31.114040 [info ] [Thread-4 (]: 8 of 19 PASS not_null_mart_product_performance_sku ............................. [[32mPASS[0m in 0.51s]
+[0m10:15:31.107271 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.102 seconds
+[0m10:15:31.140162 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_fct_daily_sales_sales_lines.2bd125012f, now test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e)
+[0m10:15:31.152726 [debug] [Thread-4 (]: Finished running node test.stockpulse.not_null_mart_product_performance_sku.eec162c165
+[0m10:15:31.169259 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.154 seconds
+[0m10:15:31.174439 [debug] [Thread-2 (]: On test.stockpulse.not_null_mart_product_performance_revenue.857030baeb: ROLLBACK
+[0m10:15:31.176760 [debug] [Thread-1 (]: Began compiling node test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e
+[0m10:15:31.182175 [debug] [Thread-4 (]: Began running node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3
+[0m10:15:31.191397 [debug] [Thread-3 (]: On test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c: ROLLBACK
+[0m10:15:31.194152 [debug] [Thread-2 (]: On test.stockpulse.not_null_mart_product_performance_revenue.857030baeb: Close
+[0m10:15:31.212956 [info ] [Thread-4 (]: 10 of 19 START test source_not_null_stockpulse_app_ingestion_product_id ........ [RUN]
+[0m10:15:31.232595 [debug] [Thread-3 (]: On test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c: Close
+[0m10:15:31.237505 [debug] [Thread-1 (]: Writing injected SQL for node "test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e"
+[0m10:15:31.246536 [info ] [Thread-2 (]: 7 of 19 PASS not_null_mart_product_performance_revenue ......................... [[32mPASS[0m in 0.66s]
+[0m10:15:31.243251 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_mart_product_performance_sku.eec162c165, now test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3)
+[0m10:15:31.250962 [info ] [Thread-3 (]: 6 of 19 PASS not_null_mart_product_performance_gross_profit .................... [[32mPASS[0m in 0.66s]
+[0m10:15:31.264960 [debug] [Thread-2 (]: Finished running node test.stockpulse.not_null_mart_product_performance_revenue.857030baeb
+[0m10:15:31.268162 [debug] [Thread-4 (]: Began compiling node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3
+[0m10:15:31.273108 [debug] [Thread-3 (]: Finished running node test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c
+[0m10:15:31.276416 [debug] [Thread-2 (]: Began running node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7
+[0m10:15:31.299980 [debug] [Thread-3 (]: Began running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7
+[0m10:15:31.345678 [info ] [Thread-2 (]: 11 of 19 START test source_not_null_stockpulse_app_ingestion_product_sku ....... [RUN]
+[0m10:15:31.358882 [debug] [Thread-1 (]: Began executing node test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e
+[0m10:15:31.356818 [info ] [Thread-3 (]: 12 of 19 START test source_not_null_stockpulse_app_ingestion_salerecord_id ..... [RUN]
+[0m10:15:31.386704 [debug] [Thread-4 (]: Writing injected SQL for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3"
+[0m10:15:31.389454 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_mart_product_performance_revenue.857030baeb, now test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7)
+[0m10:15:31.405197 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_mart_product_performance_gross_profit.e84185295c, now test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7)
+[0m10:15:31.412593 [debug] [Thread-1 (]: Writing runtime sql for node "test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e"
+[0m10:15:31.420418 [debug] [Thread-2 (]: Began compiling node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7
+[0m10:15:31.424073 [debug] [Thread-3 (]: Began compiling node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7
+[0m10:15:31.513154 [debug] [Thread-2 (]: Writing injected SQL for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7"
+[0m10:15:31.517778 [debug] [Thread-3 (]: Writing injected SQL for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7"
+[0m10:15:31.520854 [debug] [Thread-1 (]: Using postgres connection "test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e"
+[0m10:15:31.524157 [debug] [Thread-4 (]: Began executing node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3
+[0m10:15:31.537838 [debug] [Thread-3 (]: Began executing node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7
+[0m10:15:31.540391 [debug] [Thread-1 (]: On test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select units_sold
+from "stockpulse"."analytics_marts"."mart_product_performance"
+where units_sold is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:31.560615 [debug] [Thread-4 (]: Writing runtime sql for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3"
+[0m10:15:31.591157 [debug] [Thread-3 (]: Writing runtime sql for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7"
+[0m10:15:31.663769 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:15:31.671794 [debug] [Thread-2 (]: Began executing node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7
+[0m10:15:31.700422 [debug] [Thread-2 (]: Writing runtime sql for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7"
+[0m10:15:31.736673 [debug] [Thread-3 (]: Using postgres connection "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7"
+[0m10:15:31.740312 [debug] [Thread-3 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "stockpulse"."public"."ingestion_salerecord"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:31.742905 [debug] [Thread-4 (]: Using postgres connection "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3"
+[0m10:15:31.755107 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.091 seconds
+[0m10:15:31.791102 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:15:31.845760 [debug] [Thread-4 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "stockpulse"."public"."ingestion_product"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:31.860754 [debug] [Thread-1 (]: On test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e: ROLLBACK
+[0m10:15:31.884327 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:15:31.888610 [debug] [Thread-1 (]: On test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e: Close
+[0m10:15:31.914175 [info ] [Thread-1 (]: 9 of 19 PASS not_null_mart_product_performance_units_sold ...................... [[32mPASS[0m in 0.77s]
+[0m10:15:31.919758 [debug] [Thread-2 (]: Using postgres connection "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7"
+[0m10:15:31.933077 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.142 seconds
+[0m10:15:31.936522 [debug] [Thread-1 (]: Finished running node test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e
+[0m10:15:31.948028 [debug] [Thread-2 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sku
+from "stockpulse"."public"."ingestion_product"
+where sku is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:31.972886 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.088 seconds
+[0m10:15:31.985881 [debug] [Thread-3 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7: ROLLBACK
+[0m10:15:32.019001 [debug] [Thread-3 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7: Close
+[0m10:15:31.992456 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:15:32.015700 [debug] [Thread-4 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3: ROLLBACK
+[0m10:15:32.022707 [info ] [Thread-3 (]: 12 of 19 PASS source_not_null_stockpulse_app_ingestion_salerecord_id ........... [[32mPASS[0m in 0.62s]
+[0m10:15:31.989253 [debug] [Thread-1 (]: Began running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf
+[0m10:15:32.028756 [debug] [Thread-4 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3: Close
+[0m10:15:32.032376 [debug] [Thread-3 (]: Finished running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7
+[0m10:15:32.045674 [info ] [Thread-1 (]: 13 of 19 START test source_not_null_stockpulse_app_ingestion_salerecord_quantity  [RUN]
+[0m10:15:32.072687 [info ] [Thread-4 (]: 10 of 19 PASS source_not_null_stockpulse_app_ingestion_product_id .............. [[32mPASS[0m in 0.83s]
+[0m10:15:32.100153 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.108 seconds
+[0m10:15:32.131768 [debug] [Thread-3 (]: Began running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de
+[0m10:15:32.152748 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.stockpulse.not_null_mart_product_performance_units_sold.12ecc6bd3e, now test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf)
+[0m10:15:32.173516 [debug] [Thread-4 (]: Finished running node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3
+[0m10:15:32.183068 [debug] [Thread-2 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7: ROLLBACK
+[0m10:15:32.236329 [info ] [Thread-3 (]: 14 of 19 START test source_not_null_stockpulse_app_ingestion_salerecord_sku .... [RUN]
+[0m10:15:32.285120 [debug] [Thread-1 (]: Began compiling node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf
+[0m10:15:32.337469 [debug] [Thread-4 (]: Began running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d
+[0m10:15:32.348919 [debug] [Thread-2 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7: Close
+[0m10:15:32.363567 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_id.b8a64719b7, now test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de)
+[0m10:15:32.442280 [info ] [Thread-4 (]: 15 of 19 START test source_not_null_stockpulse_app_ingestion_salerecord_transaction_id  [RUN]
+[0m10:15:32.448384 [debug] [Thread-1 (]: Writing injected SQL for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf"
+[0m10:15:32.463310 [info ] [Thread-2 (]: 11 of 19 PASS source_not_null_stockpulse_app_ingestion_product_sku ............. [[32mPASS[0m in 1.07s]
+[0m10:15:32.503211 [debug] [Thread-3 (]: Began compiling node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de
+[0m10:15:32.546397 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.stockpulse.source_not_null_stockpulse_app_ingestion_product_id.5e164ca8b3, now test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d)
+[0m10:15:32.597398 [debug] [Thread-2 (]: Finished running node test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7
+[0m10:15:32.644511 [debug] [Thread-4 (]: Began compiling node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d
+[0m10:15:32.693374 [debug] [Thread-3 (]: Writing injected SQL for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de"
+[0m10:15:32.702805 [debug] [Thread-2 (]: Began running node test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7
+[0m10:15:32.834395 [debug] [Thread-4 (]: Writing injected SQL for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d"
+[0m10:15:32.858587 [info ] [Thread-2 (]: 16 of 19 START test source_unique_stockpulse_app_ingestion_product_id .......... [RUN]
+[0m10:15:32.890868 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.stockpulse.source_not_null_stockpulse_app_ingestion_product_sku.e09c75b8e7, now test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7)
+[0m10:15:32.913079 [debug] [Thread-2 (]: Began compiling node test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7
+[0m10:15:33.011160 [debug] [Thread-1 (]: Began executing node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf
+[0m10:15:33.080285 [debug] [Thread-4 (]: Began executing node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d
+[0m10:15:33.082637 [debug] [Thread-1 (]: Writing runtime sql for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf"
+[0m10:15:33.206126 [debug] [Thread-2 (]: Writing injected SQL for node "test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7"
+[0m10:15:33.208513 [debug] [Thread-3 (]: Began executing node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de
+[0m10:15:33.210539 [debug] [Thread-4 (]: Writing runtime sql for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d"
+[0m10:15:33.358585 [debug] [Thread-3 (]: Writing runtime sql for node "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de"
+[0m10:15:33.434694 [debug] [Thread-1 (]: Using postgres connection "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf"
+[0m10:15:33.466533 [debug] [Thread-3 (]: Using postgres connection "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de"
+[0m10:15:33.454634 [debug] [Thread-1 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select quantity
+from "stockpulse"."public"."ingestion_salerecord"
+where quantity is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:33.541035 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:15:33.516530 [debug] [Thread-4 (]: Using postgres connection "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d"
+[0m10:15:33.497179 [debug] [Thread-3 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select sku
+from "stockpulse"."public"."ingestion_salerecord"
+where sku is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:33.641237 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:15:33.578800 [debug] [Thread-4 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_id
+from "stockpulse"."public"."ingestion_salerecord"
+where transaction_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:33.709652 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:15:33.750414 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.209 seconds
+[0m10:15:33.754141 [debug] [Thread-2 (]: Began executing node test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7
+[0m10:15:33.841060 [debug] [Thread-1 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf: ROLLBACK
+[0m10:15:33.873701 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.171 seconds
+[0m10:15:33.943224 [debug] [Thread-3 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de: ROLLBACK
+[0m10:15:33.975740 [debug] [Thread-2 (]: Writing runtime sql for node "test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7"
+[0m10:15:33.985716 [debug] [Thread-3 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de: Close
+[0m10:15:33.946246 [debug] [Thread-1 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf: Close
+[0m10:15:33.996304 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.291 seconds
+[0m10:15:34.000809 [info ] [Thread-3 (]: 14 of 19 PASS source_not_null_stockpulse_app_ingestion_salerecord_sku .......... [[32mPASS[0m in 1.64s]
+[0m10:15:34.021398 [debug] [Thread-4 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d: ROLLBACK
+[0m10:15:34.035118 [debug] [Thread-3 (]: Finished running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de
+[0m10:15:34.048946 [debug] [Thread-3 (]: Began running node test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a
+[0m10:15:34.032047 [info ] [Thread-1 (]: 13 of 19 PASS source_not_null_stockpulse_app_ingestion_salerecord_quantity ..... [[32mPASS[0m in 1.88s]
+[0m10:15:34.060344 [info ] [Thread-3 (]: 17 of 19 START test source_unique_stockpulse_app_ingestion_product_sku ......... [RUN]
+[0m10:15:34.077439 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_sku.5031f9a6de, now test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a)
+[0m10:15:34.081560 [debug] [Thread-3 (]: Began compiling node test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a
+[0m10:15:34.051801 [debug] [Thread-4 (]: On test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d: Close
+[0m10:15:34.066494 [debug] [Thread-1 (]: Finished running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf
+[0m10:15:34.136025 [debug] [Thread-1 (]: Began running node test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006
+[0m10:15:34.113582 [debug] [Thread-2 (]: Using postgres connection "test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7"
+[0m10:15:34.132957 [info ] [Thread-4 (]: 15 of 19 PASS source_not_null_stockpulse_app_ingestion_salerecord_transaction_id  [[32mPASS[0m in 1.59s]
+[0m10:15:34.233421 [debug] [Thread-4 (]: Finished running node test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d
+[0m10:15:34.272456 [debug] [Thread-4 (]: Began running node test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768
+[0m10:15:34.153034 [info ] [Thread-1 (]: 18 of 19 START test source_unique_stockpulse_app_ingestion_salerecord_id ....... [RUN]
+[0m10:15:34.217887 [debug] [Thread-2 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "stockpulse"."public"."ingestion_product"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:34.254519 [debug] [Thread-3 (]: Writing injected SQL for node "test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a"
+[0m10:15:34.321933 [info ] [Thread-4 (]: 19 of 19 START test unique_fct_daily_sales_sale_date ........................... [RUN]
+[0m10:15:34.375445 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_transaction_id.3a7a96d29d, now test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768)
+[0m10:15:34.378124 [debug] [Thread-4 (]: Began compiling node test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768
+[0m10:15:34.325646 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.stockpulse.source_not_null_stockpulse_app_ingestion_salerecord_quantity.4cbc948faf, now test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006)
+[0m10:15:34.431036 [debug] [Thread-1 (]: Began compiling node test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006
+[0m10:15:34.339716 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:15:34.665929 [debug] [Thread-1 (]: Writing injected SQL for node "test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006"
+[0m10:15:34.704217 [debug] [Thread-3 (]: Began executing node test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a
+[0m10:15:34.690975 [debug] [Thread-4 (]: Writing injected SQL for node "test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768"
+[0m10:15:34.723403 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.384 seconds
+[0m10:15:34.789124 [debug] [Thread-3 (]: Writing runtime sql for node "test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a"
+[0m10:15:34.812825 [debug] [Thread-2 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7: ROLLBACK
+[0m10:15:34.822384 [debug] [Thread-4 (]: Began executing node test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768
+[0m10:15:34.844461 [debug] [Thread-2 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7: Close
+[0m10:15:34.864383 [info ] [Thread-2 (]: 16 of 19 PASS source_unique_stockpulse_app_ingestion_product_id ................ [[32mPASS[0m in 1.97s]
+[0m10:15:34.861296 [debug] [Thread-4 (]: Writing runtime sql for node "test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768"
+[0m10:15:34.900091 [debug] [Thread-2 (]: Finished running node test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7
+[0m10:15:34.945323 [debug] [Thread-3 (]: Using postgres connection "test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a"
+[0m10:15:34.962658 [debug] [Thread-3 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    sku as unique_field,
+    count(*) as n_records
+
+from "stockpulse"."public"."ingestion_product"
+where sku is not null
+group by sku
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:34.978632 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:15:34.981958 [debug] [Thread-1 (]: Began executing node test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006
+[0m10:15:34.997581 [debug] [Thread-4 (]: Using postgres connection "test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768"
+[0m10:15:35.021340 [debug] [Thread-4 (]: On test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    sale_date as unique_field,
+    count(*) as n_records
+
+from "stockpulse"."analytics_marts"."fct_daily_sales"
+where sale_date is not null
+group by sale_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:35.017213 [debug] [Thread-1 (]: Writing runtime sql for node "test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006"
+[0m10:15:35.031649 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:15:35.079120 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.120 seconds
+[0m10:15:35.096172 [debug] [Thread-3 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a: ROLLBACK
+[0m10:15:35.116440 [debug] [Thread-3 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a: Close
+[0m10:15:35.142798 [info ] [Thread-3 (]: 17 of 19 PASS source_unique_stockpulse_app_ingestion_product_sku ............... [[32mPASS[0m in 1.05s]
+[0m10:15:35.156277 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.138 seconds
+[0m10:15:35.254312 [debug] [Thread-3 (]: Finished running node test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a
+[0m10:15:35.314235 [debug] [Thread-4 (]: On test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768: ROLLBACK
+[0m10:15:35.335237 [debug] [Thread-1 (]: Using postgres connection "test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006"
+[0m10:15:35.356890 [debug] [Thread-4 (]: On test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768: Close
+[0m10:15:35.372647 [debug] [Thread-1 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006: /* {"app": "dbt", "dbt_version": "1.13.0b1", "profile_name": "stockpulse", "target_name": "dev", "node_id": "test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "stockpulse"."public"."ingestion_salerecord"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:15:35.390751 [info ] [Thread-4 (]: 19 of 19 PASS unique_fct_daily_sales_sale_date ................................. [[32mPASS[0m in 1.02s]
+[0m10:15:35.484536 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:15:35.951706 [debug] [Thread-4 (]: Finished running node test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768
+[0m10:15:36.271150 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.787 seconds
+[0m10:15:36.508670 [debug] [Thread-1 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006: ROLLBACK
+[0m10:15:36.548974 [debug] [Thread-1 (]: On test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006: Close
+[0m10:15:36.591333 [info ] [Thread-1 (]: 18 of 19 PASS source_unique_stockpulse_app_ingestion_salerecord_id ............. [[32mPASS[0m in 2.27s]
+[0m10:15:36.634118 [debug] [Thread-1 (]: Finished running node test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006
+[0m10:15:36.673812 [debug] [MainThread]: On master: COMMIT
+[0m10:15:36.691174 [debug] [MainThread]: Using postgres connection "master"
+[0m10:15:36.718168 [debug] [MainThread]: On master: COMMIT
+[0m10:15:36.737249 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:15:36.842983 [debug] [MainThread]: SQL status: COMMIT in 0.106 seconds
+[0m10:15:36.869721 [debug] [MainThread]: On master: Close
+[0m10:15:36.886423 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:15:36.905149 [debug] [MainThread]: Connection 'test.stockpulse.source_unique_stockpulse_app_ingestion_product_id.6ecddcd8c7' was properly closed.
+[0m10:15:36.924820 [debug] [MainThread]: Connection 'test.stockpulse.source_unique_stockpulse_app_ingestion_salerecord_id.d4f872e006' was properly closed.
+[0m10:15:36.932938 [debug] [MainThread]: Connection 'test.stockpulse.source_unique_stockpulse_app_ingestion_product_sku.f7370d831a' was properly closed.
+[0m10:15:36.952729 [debug] [MainThread]: Connection 'test.stockpulse.unique_fct_daily_sales_sale_date.71dbaf9768' was properly closed.
+[0m10:15:36.983620 [info ] [MainThread]: 
+[0m10:15:37.079334 [info ] [MainThread]: Finished running 19 data tests in 0 hours 0 minutes and 8.95 seconds (8.95s).
+[0m10:15:37.209247 [debug] [MainThread]: Command end result
+[0m10:15:37.874838 [debug] [MainThread]: Wrote artifact WritableManifest to /opt/airflow/dbt-stock-pulse/target/manifest.json
+[0m10:15:37.935656 [debug] [MainThread]: Wrote artifact SemanticManifest to /opt/airflow/dbt-stock-pulse/target/semantic_manifest.json
+[0m10:15:37.972509 [debug] [MainThread]: Wrote artifact OsiDocument to /opt/airflow/dbt-stock-pulse/target/osi_document.json
+[0m10:15:38.100692 [debug] [MainThread]: Wrote artifact RunExecutionResult to /opt/airflow/dbt-stock-pulse/target/run_results.json
+[0m10:15:38.104905 [info ] [MainThread]: 
+[0m10:15:38.108557 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:15:38.111560 [info ] [MainThread]: 
+[0m10:15:38.119479 [info ] [MainThread]: Done. PASS=19 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=19
+[0m10:15:38.126394 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 21.250399, "process_in_blocks": "1120", "process_kernel_time": 4.690761, "process_mem_max_rss": "156688", "process_out_blocks": "0", "process_user_time": 31.537447}
+[0m10:15:38.130060 [debug] [MainThread]: Command `dbt test` succeeded at 10:15:38.129545 after 21.25 seconds
+[0m10:15:38.138460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c1ab6b170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c15ee32c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c17339df0>]}
+[0m10:15:38.140797 [debug] [MainThread]: Flushing usage events
+[0m10:15:39.931196 [debug] [MainThread]: An error was encountered while trying to flush usage events
