@@ -2,6 +2,7 @@ import json
 import os
 import psycopg2
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 from uuid import UUID
@@ -52,9 +53,10 @@ def validate_event(event):
     if quantity <= 0 or str(quantity) != str(event["quantity"]):
         raise ValueError("Quantity must be a positive integer")
 
-    sold_at = datetime.fromisoformat(
-        str(event["sold_at"]).replace("Z", "+00:00")
+    sold_at = datetime.strptime(event["sold_at"], "%d/%m/%Y %H:%M").replace(
+        tzinfo=ZoneInfo("Africa/Nairobi").isoformat()
     )
+    
     if sold_at.tzinfo is None:
         raise ValueError("sold_at must include a timezone")
 
@@ -188,14 +190,14 @@ def persist_event(connection, producer, raw_bytes):
 
 consumer = KafkaConsumer(
     SOURCE_TOPIC,
-    bootstrap_servers=["127.0.0.1:9092"],
+    bootstrap_servers=[os.getenv("KAFKA_BOOTSTRAP_SERVERS", "127.0.0.1:9092")],
     group_id="stockpulse-postgres-ingestion-v2",
     auto_offset_reset="earliest",
     enable_auto_commit=False,
 )
 
 producer = KafkaProducer(
-    bootstrap_servers=["127.0.0.1:9092"],
+    bootstrap_servers=[os.getenv("KAFKA_BOOTSTRAP_SERVERS", "127.0.0.1:9092")],
     acks="all",
     retries=5,
     value_serializer=lambda value: json.dumps(value).encode("utf-8"),

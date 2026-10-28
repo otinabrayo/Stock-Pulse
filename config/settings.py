@@ -14,7 +14,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(BASE_DIR / ".env")
+load_dotenv(BASE_DIR / ".env", override=True)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,12 +46,14 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     # Django applications
+    "corsheaders",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "django_extensions",
 
     # Third-party applications
     "rest_framework",
@@ -62,6 +64,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -101,7 +104,7 @@ DATABASES = {
         "USER": os.getenv("POSTGRES_USER"),
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
         "HOST": os.getenv("DB_HOST", "127.0.0.1"),
-        "PORT": os.getenv("DB_PORT", "5432"),
+        "PORT": os.getenv("DB_PORT", "5433"),
         "CONN_MAX_AGE": 60,
     }
 }
@@ -157,6 +160,11 @@ DATA_RAW_ROOT = BASE_DIR / "data" / "raw"
 FILE_UPLOAD_MAX_MEMORY_SIZE = 5 * 1024 * 1024
 DATA_UPLOAD_MAX_MEMORY_SIZE = 10 * 1024 * 1024
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+
 REST_FRAMEWORK = {
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
@@ -167,3 +175,18 @@ REST_FRAMEWORK = {
         "rest_framework.parsers.FormParser",
     ],
 }
+
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3.S3Storage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+    },
+}
+AWS_S3_ENDPOINT_URL = os.getenv("MINIO_ENDPOINT_URL", "http://127.0.0.1:9000")
+AWS_ACCESS_KEY_ID = os.getenv("MINIO_ROOT_USER")
+AWS_SECRET_ACCESS_KEY = os.getenv("MINIO_ROOT_PASSWORD")
+AWS_STORAGE_BUCKET_NAME = os.getenv("MINIO_BUCKET_NAME")
+# AWS_S3_ADDRESSING_STYLE = "/raw/"
+AWS_DEFAULT_REGION = "us-east-1"

@@ -1,0 +1,128 @@
+[0m11:19:52.275934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D2290C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D20122E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D2518BB10>]}
+
+
+============================== 11:19:52.286739 | a5f923ee-da89-4ef9-b200-62bb06e7f305 ==============================
+[0m11:19:52.286739 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m11:19:52.288196 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\brian\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select mart_product_performance', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m11:19:52.289084 [debug] [MainThread]: Tracking: tracking
+[0m11:19:52.289989 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:19:52.291951 [debug] [MainThread]: Command `dbt run` failed at 11:19:52.291738 after 0.47 seconds
+[0m11:19:52.292629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D250CA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D251D8CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D251E08D0>]}
+[0m11:19:52.293321 [debug] [MainThread]: Flushing usage events
+[0m11:19:56.106468 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:31:45.116978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021659F6C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021657792E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002165C767C50>]}
+
+
+============================== 00:31:45.136467 | 37e0d447-bb92-4bdc-9c09-af94f6fcd005 ==============================
+[0m00:31:45.136467 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m00:31:45.140080 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:/Users/brian/.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --profiles-dir C:/Users/brian/.dbt', 'log_path': 'logs'}
+[0m00:31:45.142458 [debug] [MainThread]: Tracking: tracking
+[0m00:31:45.284259 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m00:31:45.289206 [info ] [MainThread]: python version: 3.14.5
+[0m00:31:45.293517 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m00:31:45.320428 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m00:31:45.368775 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m00:31:45.996267 [info ] [MainThread]: Using profiles dir at C:/Users/brian/.dbt
+[0m00:31:46.004338 [info ] [MainThread]: Using profiles.yml file at C:/Users/brian/.dbt\profiles.yml
+[0m00:31:46.013943 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml
+[0m00:31:46.019840 [info ] [MainThread]: Configuration:
+[0m00:31:46.078508 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m00:31:46.104226 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m00:31:46.121235 [info ] [MainThread]: Required dependencies:
+[0m00:31:46.155227 [debug] [MainThread]: Executing "git --help"
+[0m00:31:46.349699 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:31:46.352574 [debug] [MainThread]: STDERR: "b''"
+[0m00:31:46.354643 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:31:46.363815 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m00:31:46.367510 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m00:31:46.378820 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "netflix", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m00:31:46.384126 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml> not found
+
+[0m00:31:46.390241 [debug] [MainThread]: Command `dbt debug` failed at 00:31:46.389691 after 2.47 seconds
+[0m00:31:46.392534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002165C8CC770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002165C86FBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021659CAD6A0>]}
+[0m00:31:46.394916 [debug] [MainThread]: Flushing usage events
+[0m00:31:52.479031 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:59:08.671769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E9914C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E96962E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E9B947C50>]}
+
+
+============================== 09:59:08.682209 | 40620fdf-dfd9-4216-93fa-41dee961f176 ==============================
+[0m09:59:08.682209 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:59:08.683563 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:/Users/brian/.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug --profiles-dir C:/Users/brian/.dbt', 'log_path': 'logs'}
+[0m09:59:08.684344 [debug] [MainThread]: Tracking: tracking
+[0m09:59:08.770936 [info ] [MainThread]: dbt version: 1.13.0-b1
+[0m09:59:08.771962 [info ] [MainThread]: python version: 3.14.5
+[0m09:59:08.773066 [info ] [MainThread]: python path: C:\Python314\python.exe
+[0m09:59:08.774228 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m09:59:08.789337 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m09:59:09.312282 [info ] [MainThread]: Using profiles dir at C:/Users/brian/.dbt
+[0m09:59:09.315774 [info ] [MainThread]: Using profiles.yml file at C:/Users/brian/.dbt\profiles.yml
+[0m09:59:09.318567 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml
+[0m09:59:09.322614 [info ] [MainThread]: Configuration:
+[0m09:59:09.325175 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m09:59:09.327754 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:59:09.330130 [info ] [MainThread]: Required dependencies:
+[0m09:59:09.334246 [debug] [MainThread]: Executing "git --help"
+[0m09:59:09.481092 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:59:09.483705 [debug] [MainThread]: STDERR: "b''"
+[0m09:59:09.485953 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:59:09.488265 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:59:09.490776 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:59:09.502359 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "netflix", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+
+
+[0m09:59:09.505550 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml> not found
+
+[0m09:59:09.509998 [debug] [MainThread]: Command `dbt debug` failed at 09:59:09.509489 after 1.43 seconds
+[0m09:59:09.511952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E9BAA8770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E9BA4BBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E98E8D6A0>]}
+[0m09:59:09.514234 [debug] [MainThread]: Flushing usage events
+[0m09:59:12.654917 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:59:27.542436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB58E6C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB56672E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB5B6EBB10>]}
+
+
+============================== 09:59:27.556540 | 98e0f9b7-41d6-4c62-b943-52f6bb7c6e99 ==============================
+[0m09:59:27.556540 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:59:27.558942 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:/Users/brian/.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run --profiles-dir C:/Users/brian/.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m09:59:27.560647 [debug] [MainThread]: Tracking: tracking
+[0m09:59:27.563560 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:59:27.568989 [debug] [MainThread]: Command `dbt run` failed at 09:59:27.568660 after 0.45 seconds
+[0m09:59:27.570165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB5B626190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB5B734CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB5B7408D0>]}
+[0m09:59:27.571311 [debug] [MainThread]: Flushing usage events
+[0m09:59:30.270694 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:59:47.479965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284F773C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284F4F52E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284F9FBFB10>]}
+
+
+============================== 09:59:47.490136 | bdf2be3c-9622-45ae-85a5-ef63c10378e7 ==============================
+[0m09:59:47.490136 [info ] [MainThread]: Running with dbt=1.13.0-b1
+[0m09:59:47.491609 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:/Users/brian/.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --profiles-dir C:/Users/brian/.dbt', 'log_path': 'logs'}
+[0m09:59:47.492641 [debug] [MainThread]: Tracking: tracking
+[0m09:59:47.493566 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\brian\Downloads\stock-pulse\backend\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:59:47.495521 [debug] [MainThread]: Command `dbt test` failed at 09:59:47.495302 after 0.47 seconds
+[0m09:59:47.496299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284F9EF2190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284FA008CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284FA0108D0>]}
+[0m09:59:47.498050 [debug] [MainThread]: Flushing usage events
+[0m09:59:49.919386 [debug] [MainThread]: An error was encountered while trying to flush usage events

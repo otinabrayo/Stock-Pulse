@@ -13,3 +13,4 @@ staticfiles/
 htmlcov/
 docs/
 kafka_app/.env
+minio.license

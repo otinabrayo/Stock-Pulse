@@ -89,15 +89,24 @@ def validate_sales_csv(file_path) -> ValidationResult:
         if not sku:
             reasons.append("Missing SKU")
 
-        try:
-            sold_at = pd.to_datetime(
-                row["sold_at"],
-                errors="raise",
-                utc=True,
-            ).to_pydatetime()
-        except (ValueError, TypeError, OverflowError):
-            sold_at = None
-            reasons.append("Invalid sold_at date")
+        sold_at_raw = str(row["sold_at"]).strip()
+        sold_at = None
+
+        for fmt in ("%d/%m/%Y %H:%M", "%d/%m/%Y %H:%M:%S"):
+            try:
+                sold_at = (
+                    pd.to_datetime(sold_at_raw, format=fmt, errors="raise")
+                    .tz_localize("Africa/Nairobi")
+                    .to_pydatetime()
+                )
+                break
+            except (ValueError, TypeError, OverflowError):
+                continue
+
+        if sold_at is None:
+            reasons.append(
+                f"Invalid sold_at {sold_at_raw!r}, expected DD/MM/YYYY HH:MM"
+            )
 
         try:
             quantity_decimal = Decimal(str(row["quantity"]))
@@ -109,6 +118,7 @@ def validate_sales_csv(file_path) -> ValidationResult:
             ):
                 raise InvalidOperation
             quantity = int(quantity_decimal)
+            
         except (InvalidOperation, ValueError, TypeError):
             quantity = None
             reasons.append(

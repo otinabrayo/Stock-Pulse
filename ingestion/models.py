@@ -14,6 +14,18 @@ class IngestionRun(models.Model):
         default=uuid.uuid4,
         editable=False,
     )
+
+    raw_bucket = models.CharField(
+        max_length=255,
+        blank=True,
+        null=True,
+    )
+
+    raw_object_key = models.CharField(
+        max_length=1024,
+        blank=True,
+        null=True,
+    )
     original_filename = models.CharField(max_length=255)
     raw_file = models.FileField(upload_to="", max_length=500)
 
@@ -27,6 +39,12 @@ class IngestionRun(models.Model):
     rows_valid = models.PositiveIntegerField(default=0)
     rows_rejected = models.PositiveIntegerField(default=0)
 
+    # Store rejected-row details as JSON.
+    validation_errors = models.JSONField(
+        default=list,
+        blank=True,
+    )
+
     error_message = models.TextField(blank=True, default="")
     created_at = models.DateTimeField(auto_now_add=True)
     completed_at = models.DateTimeField(null=True, blank=True)
@@ -36,7 +54,6 @@ class IngestionRun(models.Model):
 
     def __str__(self):
         return f"{self.original_filename} ({self.status})"
-
 
 class Product(models.Model):
     sku = models.CharField(max_length=100, unique=True)
@@ -162,3 +179,4 @@ class RejectedRecord(models.Model):
             f"Rejected row {self.source_row_number} "
             f"in {self.ingestion_run_id}"
         )
+

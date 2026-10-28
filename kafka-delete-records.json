@@ -1,0 +1,17 @@
+{
+    "version":  1,
+    "partitions":  [
+                       {
+                           "partition":  0,
+                           "offset":  7
+                       },
+                       {
+                           "partition":  1,
+                           "offset":  3
+                       },
+                       {
+                           "partition":  2,
+                           "offset":  3
+                       }
+                   ]
+}

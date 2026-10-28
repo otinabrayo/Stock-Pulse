@@ -9,10 +9,33 @@ from django.db.models.functions import TruncDate
 from .models import SaleRecord
 
 
-MONEY_FIELD = DecimalField(
-    max_digits=20,
-    decimal_places=2,
-)
+MONEY_FIELD = DecimalField(max_digits=20, decimal_places=2)
+
+def product_performance():
+    revenue_expression = ExpressionWrapper(
+        F("quantity") * F("unit_price"),
+        output_field=MONEY_FIELD,
+    )
+
+    cost_expression = ExpressionWrapper(
+        F("quantity") * F("unit_cost"),
+        output_field=MONEY_FIELD,
+    )
+
+    return list(
+        SaleRecord.objects
+        .values(
+            "sku",
+            "product__name",
+            "product__category",
+        )
+        .annotate(
+            units_sold=Sum("quantity"),
+            revenue=Sum(revenue_expression),
+            cost_of_goods_sold=Sum(cost_expression),
+        )
+        .order_by("-revenue")
+    )
 
 
 def sales_metrics(queryset=None):
@@ -52,7 +75,6 @@ def sales_metrics(queryset=None):
         "gross_profit": revenue - cost,
     }
 
-
 def daily_sales():
     revenue_expression = ExpressionWrapper(
         F("quantity") * F("unit_price"),
@@ -74,21 +96,4 @@ def daily_sales():
             cost=Sum(cost_expression),
         )
         .order_by("sale_date")
-    )
-
-
-def product_performance():
-    revenue_expression = ExpressionWrapper(
-        F("quantity") * F("unit_price"),
-        output_field=MONEY_FIELD,
-    )
-
-    return list(
-        SaleRecord.objects
-        .values("sku", "product__name", "product__category")
-        .annotate(
-            units_sold=Sum("quantity"),
-            revenue=Sum(revenue_expression),
-        )
-        .order_by("-revenue")
     )

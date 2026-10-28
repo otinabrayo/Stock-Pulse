@@ -1,9 +1,9 @@
-
 import json
+import os
 from kafka import KafkaProducer
 
 producer = KafkaProducer(
-    bootstrap_servers=["127.0.0.1:9092"],
+    bootstrap_servers=[os.getenv("KAFKA_BOOTSTRAP_SERVERS", "127.0.0.1:9092")],
 )
 
 messages = [

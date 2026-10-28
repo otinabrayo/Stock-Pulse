@@ -3,12 +3,15 @@ from .views import (
     SalesCSVUploadView,
     IngestionRunListView,
     IngestionRunDetailView,
+    SaleRecordListView,
+    MonthlyComparisonAPIView,
 )
 from .analytics_views import (
-    SalesSummaryView,
-    DailySalesView,
-    ProductPerformanceView,
+    daily_sales_api,
+    product_performance_api,
+    sales_summary_api,
 )
+from .health_views import pipeline_health
 
 
 urlpatterns = [
@@ -27,19 +30,10 @@ urlpatterns = [
         IngestionRunDetailView.as_view(),
         name="ingestion-detail",
     ),
-    path(
-        "analytics/summary/",
-        SalesSummaryView.as_view(),
-        name="analytics-summary",
-    ),
-    path(
-        "analytics/daily-sales/",
-        DailySalesView.as_view(),
-        name="analytics-daily-sales",
-    ),
-    path(
-        "analytics/products/",
-        ProductPerformanceView.as_view(),
-        name="analytics-products",
-    ),
+    path("analytics/summary/", sales_summary_api, name="sales-summary"),
+    path("analytics/daily-sales/", daily_sales_api, name="daily-sales"),
+    path("analytics/products/", product_performance_api, name="product-performance",),
+    path("sales/", SaleRecordListView.as_view(), name="sales-list",),
+    path("analytics/monthly-comparison/", MonthlyComparisonAPIView.as_view(), name="monthly-comparison",),
+    path("health/pipeline/", pipeline_health, name="pipeline-health",),
 ]
